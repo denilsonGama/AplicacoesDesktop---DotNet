@@ -12,7 +12,7 @@ namespace ADO_NETProject01
         public Fornecedor FornecedorNota { get; set; }
         public DateTime DataEmissao { get; set; }
         public DateTime DataEntrada { get; set; }
-        /*public IList<ProdutoNotaEntrada> Produtos { get; set; }
+        public IList<ProdutoNotaEntrada> Produtos { get; set; }
 
         public NotaEntrada()
         {
@@ -35,7 +35,7 @@ namespace ADO_NETProject01
         public void RemoverTodosProdutos()
         {
             this.Produtos.Clear();
-        }*/
+        }
 
         protected bool Equals(NotaEntrada other)
         {
