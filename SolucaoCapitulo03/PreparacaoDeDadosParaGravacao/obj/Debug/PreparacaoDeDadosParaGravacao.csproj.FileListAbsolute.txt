@@ -1,0 +1,14 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Debug\PreparacaoDeDadosParaGravacao.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Debug\PreparacaoDeDadosParaGravacao.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Debug\PreparacaoDeDadosParaGravacao.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.FormGeracaoArquivoTexto.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Debug\PreparacaoDeDadosParaGravacao.exe.manifest
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Debug\PreparacaoDeDadosParaGravacao.application
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.exe.manifest
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Debug\PreparacaoDeDadosParaGravacao.application

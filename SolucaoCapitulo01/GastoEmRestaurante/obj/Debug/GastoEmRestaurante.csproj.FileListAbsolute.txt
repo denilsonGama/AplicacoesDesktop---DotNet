@@ -1,0 +1,10 @@
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.FormGastoEmRestaurante.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.Properties.Resources.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\bin\Debug\GastoEmRestaurante.exe.config
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\bin\Debug\GastoEmRestaurante.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\bin\Debug\GastoEmRestaurante.pdb
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo01\GastoEmRestaurante\obj\Debug\GastoEmRestaurante.pdb

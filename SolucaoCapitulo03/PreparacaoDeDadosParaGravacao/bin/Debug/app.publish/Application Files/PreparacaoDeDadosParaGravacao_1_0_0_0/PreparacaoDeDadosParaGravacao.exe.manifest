@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PreparacaoDeDadosParaGravacao.exe" version="1.0.0.0" publicKeyToken="e3d22a8401d030b1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PreparacaoDeDadosParaGravacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PreparacaoDeDadosParaGravacao.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto UAC
+          Se desejar mudar o nível de Controle de Conta de Usuário do Windows, substitua o 
+          nó requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se deseja usar a Virtualização de Arquivos e Registro para compatibilidade 
+         com versões anteriores, exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PreparacaoDeDadosParaGravacao.exe" size="13808">
+      <assemblyIdentity name="PreparacaoDeDadosParaGravacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MUjCI0vXp2iG7K3Z8WzWmqx7DR/2xR5ORdq9DFp+8GY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="PreparacaoDeDadosParaGravacao.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SUPER_DELL\Denilson.Gama" issuerKeyHash="528bc6986fca2b1380d156603617dd987e6be03d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>shXpsIiQyaWzo54bSpnIDV2UEdRRFtfQInFINyKKHvc=</DigestValue></Reference></SignedInfo><SignatureValue>G7HXZvRboUTVI1o7SxAjpdW2SzqdPxCRRinnWyZLHppVoqfpvol0Lb6Qt/E8yITBSPlb4NtorclVx9kERxGDUl/xg4mhkKx5Lb0Xl3kAmgGWqYyvhPBrZRZkrR1lpdO4E5csxaSBjnbD3NOl4BKSffZqTM9BIx2kEtBhVvpisxs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ozie4x9fSEr7BGytGZntcc/gRqEL/gWkrdeU64zkPDE2oPAV2TpGd4dSJ3gUiQG2AjJ0lFUd7pSR2GQ9sOJrByDgY1FAqm/wyS2zZcRxJv+Mfc6SbzADYBYUJJmY3X7DOAxuA7ObMriVQQJMUpEotZTSkkoad/bYuOSsYQj1i00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f71e8a2237487122d0d71651d411945d0dc8994a1b9ea3b3a5c99088b0e915b2" Description="" Url=""><as:assemblyIdentity name="PreparacaoDeDadosParaGravacao.exe" version="1.0.0.0" publicKeyToken="e3d22a8401d030b1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SUPER_DELL\Denilson.Gama</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>mgJsbTpLiKXwpN10saWIETr9pOxYRcnwt+sSk6ZbydA=</DigestValue></Reference></SignedInfo><SignatureValue>aJIDzY5Z/UKhfecDW5AMkTKqumrNt4Tjijl2h/YR6pBdfUdI2vx2hRhjbTHLMTObqsOw4HqoSy7XTATaomxt3qlFIhEu4/+wJ6MTt5OmsIbZxGTIIIAkWogbZg+Z5HtlPUcatDnKiNptbD5LqdLCT/NfehhVFmmcZpoVYwwGgnk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ozie4x9fSEr7BGytGZntcc/gRqEL/gWkrdeU64zkPDE2oPAV2TpGd4dSJ3gUiQG2AjJ0lFUd7pSR2GQ9sOJrByDgY1FAqm/wyS2zZcRxJv+Mfc6SbzADYBYUJJmY3X7DOAxuA7ObMriVQQJMUpEotZTSkkoad/bYuOSsYQj1i00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQct3iY+umrJNIbewNq+n85zANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAAUwBVAFAARQBSAF8ARABFAEwATABcAEQAZQBuAGkAbABzAG8AbgAuAEcAYQBtAGEwHhcNMTkwMzE0MDIyMjUxWhcNMjAwMzEzMDgyMjUxWjA7MTkwNwYDVQQDHjAAUwBVAFAARQBSAF8ARABFAEwATABcAEQAZQBuAGkAbABzAG8AbgAuAEcAYQBtAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKM4nuMfX0hK+wRsrRmZ7XHP4EahC/4FpK3XlOuM5DwxNqDwFdk6RneHUid4FIkBtgIydJRVHe6UkdhkPbDiawcg4GNRQKpv8Mkts2XEcSb/jH3Okm8wA2AWFCSZmN1+wzgMbgOzmzK4lUECTFKRKLWU0pJKGnf22LjkrGEI9YtNAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAEFkh8g2DbCBOWnY8+38EwT7M+CSQhe3f4Ac4fhRGQVBsJtd3ZudQjez7XdqmGuzOPxqgxhgC1ZA2wOmN5dKHHcZUVaYr3VluEd82UGjXRh+5636E2OPJeALyfiUEIo56iSeTTkWSUjkkFfM6jNpYppwkCvoTLw6NbXt+AMN3q+I=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

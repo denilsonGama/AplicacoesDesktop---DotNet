@@ -1,0 +1,10 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.FormGeracaoArquivoTexto.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Release\PreparacaoDeDadosParaGravacao.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Release\PreparacaoDeDadosParaGravacao.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\bin\Release\PreparacaoDeDadosParaGravacao.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\PreparacaoDeDadosParaGravacao\obj\Release\PreparacaoDeDadosParaGravacao.pdb

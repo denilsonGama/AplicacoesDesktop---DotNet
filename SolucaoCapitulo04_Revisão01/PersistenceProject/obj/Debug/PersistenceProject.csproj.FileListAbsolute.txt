@@ -1,0 +1,9 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\bin\Debug\PersistenceProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\bin\Debug\PersistenceProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\bin\Debug\ModelProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\bin\Debug\ModelProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\obj\Debug\PersistenceProject.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\obj\Debug\PersistenceProject.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\obj\Debug\PersistenceProject.csproj.CopyComplete
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\obj\Debug\PersistenceProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\PersistenceProject\obj\Debug\PersistenceProject.pdb

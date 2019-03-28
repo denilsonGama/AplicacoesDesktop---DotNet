@@ -1,0 +1,10 @@
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\bin\Debug\TrocaDeValores.exe.config
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\bin\Debug\TrocaDeValores.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\bin\Debug\TrocaDeValores.pdb
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.frmTrocaDeValores.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.Properties.Resources.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo01\TrocaDeValores\obj\Debug\TrocaDeValores.pdb

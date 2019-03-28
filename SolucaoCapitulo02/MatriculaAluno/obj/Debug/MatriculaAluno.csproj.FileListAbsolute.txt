@@ -1,0 +1,18 @@
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\bin\Debug\MatriculaAluno.exe.config
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\bin\Debug\MatriculaAluno.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\bin\Debug\MatriculaAluno.pdb
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.frmMatriculaAluno.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.Properties.Resources.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\bin\Debug\MatriculaAluno.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\bin\Debug\MatriculaAluno.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\bin\Debug\MatriculaAluno.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.frmMatriculaAluno.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\MatriculaAluno\obj\Debug\MatriculaAluno.pdb

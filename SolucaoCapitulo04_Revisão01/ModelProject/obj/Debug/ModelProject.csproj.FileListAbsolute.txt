@@ -1,0 +1,5 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ModelProject\bin\Debug\ModelProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ModelProject\bin\Debug\ModelProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ModelProject\obj\Debug\ModelProject.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ModelProject\obj\Debug\ModelProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ModelProject\obj\Debug\ModelProject.pdb

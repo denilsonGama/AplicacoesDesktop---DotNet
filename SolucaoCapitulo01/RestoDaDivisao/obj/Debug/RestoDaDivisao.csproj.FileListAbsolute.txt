@@ -1,0 +1,9 @@
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\obj\Debug\RestoDaDivisao.frmRestoDeDivisao.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\obj\Debug\RestoDaDivisao.Properties.Resources.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\obj\Debug\RestoDaDivisao.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\obj\Debug\RestoDaDivisao.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\bin\Debug\RestoDaDivisao.exe.config
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\bin\Debug\RestoDaDivisao.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\bin\Debug\RestoDaDivisao.pdb
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\obj\Debug\RestoDaDivisao.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo01\RestoDaDivisao\obj\Debug\RestoDaDivisao.pdb

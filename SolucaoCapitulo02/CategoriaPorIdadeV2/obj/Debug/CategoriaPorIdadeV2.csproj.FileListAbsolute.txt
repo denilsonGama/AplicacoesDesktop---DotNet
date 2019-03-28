@@ -1,0 +1,19 @@
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\bin\Debug\CategoriaPorIdadeV2.exe.config
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\bin\Debug\CategoriaPorIdadeV2.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\bin\Debug\CategoriaPorIdadeV2.pdb
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.frmCategoriaPorIdadeV2.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.Properties.Resources.resources
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.exe
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.pdb
+F:\VisualStudio\Projetos\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\bin\Debug\CategoriaPorIdadeV2.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\bin\Debug\CategoriaPorIdadeV2.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\bin\Debug\CategoriaPorIdadeV2.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.frmCategoriaPorIdadeV2.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CategoriaPorIdadeV2\obj\Debug\CategoriaPorIdadeV2.pdb

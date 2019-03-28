@@ -1,0 +1,14 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\bin\Debug\ReajusteFolhaDePagamento.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\bin\Debug\ReajusteFolhaDePagamento.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\bin\Debug\ReajusteFolhaDePagamento.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.FormLeituraArquivo.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\bin\Debug\ReajusteFolhaDePagamento.exe.manifest
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\bin\Debug\ReajusteFolhaDePagamento.application
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.exe.manifest
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo03\ReajusteFolhaDePagamento\obj\Debug\ReajusteFolhaDePagamento.application

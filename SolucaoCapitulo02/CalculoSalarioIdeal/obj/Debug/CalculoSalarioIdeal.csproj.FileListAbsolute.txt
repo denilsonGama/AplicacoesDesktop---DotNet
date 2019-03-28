@@ -1,0 +1,10 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.frmCalculoSalario.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\bin\Debug\CalculoSalarioIdeal.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\bin\Debug\CalculoSalarioIdeal.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\bin\Debug\CalculoSalarioIdeal.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoSalarioIdeal\obj\Debug\CalculoSalarioIdeal.csprojAssemblyReference.cache

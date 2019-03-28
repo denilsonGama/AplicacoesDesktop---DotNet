@@ -1,0 +1,11 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\bin\Debug\ControllerProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\bin\Debug\ControllerProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\bin\Debug\ModelProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\bin\Debug\PersistenceProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\bin\Debug\ModelProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\bin\Debug\PersistenceProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\obj\Debug\ControllerProject.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\obj\Debug\ControllerProject.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\obj\Debug\ControllerProject.csproj.CopyComplete
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\obj\Debug\ControllerProject.dll
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo04_Revisão01\ControllerProject\obj\Debug\ControllerProject.pdb

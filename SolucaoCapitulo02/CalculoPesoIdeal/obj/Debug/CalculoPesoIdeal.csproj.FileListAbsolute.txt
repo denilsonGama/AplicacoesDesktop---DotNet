@@ -1,0 +1,9 @@
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\bin\Debug\CalculoPesoIdeal.exe.config
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\bin\Debug\CalculoPesoIdeal.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\bin\Debug\CalculoPesoIdeal.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\obj\Debug\CalculoPesoIdeal.FrmCalculoPesoIdeal.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\obj\Debug\CalculoPesoIdeal.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\obj\Debug\CalculoPesoIdeal.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\obj\Debug\CalculoPesoIdeal.csproj.CoreCompileInputs.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\obj\Debug\CalculoPesoIdeal.exe
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolucaoCapitulo02\CalculoPesoIdeal\obj\Debug\CalculoPesoIdeal.pdb
