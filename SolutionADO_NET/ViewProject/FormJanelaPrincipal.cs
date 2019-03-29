@@ -26,5 +26,10 @@ namespace ViewProject
         {
             new FormProdutosCRUD().ShowDialog();
         }
+
+        private void compraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormNotasEntradaCRUD().ShowDialog();
+        }
     }
 }

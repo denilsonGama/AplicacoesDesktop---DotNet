@@ -10,25 +10,14 @@ namespace ADO_NETProject01
         public double PrecoDeVenda { get; set; }
         public double Estoque { get; set; }
 
-        protected bool Equals(Produto other)
+        public Produto()
         {
-            return Id.Equals(other.Id);
+            this.Id = null;
         }
 
-        public override bool Equals(object obj)
+        public override string ToString()
         {
-            if (ReferenceEquals(null, obj))
-                return false;
-            if (ReferenceEquals(this, obj))
-                return true;
-            if (obj.GetType() != typeof(Produto))
-                return false;
-            return Equals((Produto)obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return GetHashCode();
+            return this.Descricao;
         }
     }
 }

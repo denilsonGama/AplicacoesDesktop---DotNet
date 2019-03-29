@@ -59,8 +59,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtNome, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtCNPJ, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 4);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -71,7 +70,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(577, 346);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(724, 458);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lblID
@@ -117,7 +116,7 @@
             this.dgvFornecedores.Name = "dgvFornecedores";
             this.dgvFornecedores.ReadOnly = true;
             this.dgvFornecedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFornecedores.Size = new System.Drawing.Size(569, 172);
+            this.dgvFornecedores.Size = new System.Drawing.Size(716, 284);
             this.dgvFornecedores.TabIndex = 3;
             this.dgvFornecedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFornecedores_CellClick);
             // 
@@ -137,7 +136,7 @@
             this.txtNome.Location = new System.Drawing.Point(61, 34);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(512, 22);
+            this.txtNome.Size = new System.Drawing.Size(659, 22);
             this.txtNome.TabIndex = 5;
             // 
             // txtCNPJ
@@ -163,12 +162,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnGravar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnCancelar, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnRemover, 3, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 110);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(76, 110);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(569, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(572, 36);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // btnNovo
@@ -177,7 +176,7 @@
             this.btnNovo.Location = new System.Drawing.Point(4, 4);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(134, 28);
+            this.btnNovo.Size = new System.Drawing.Size(135, 28);
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -186,10 +185,10 @@
             // btnGravar
             // 
             this.btnGravar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGravar.Location = new System.Drawing.Point(146, 4);
+            this.btnGravar.Location = new System.Drawing.Point(147, 4);
             this.btnGravar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Size = new System.Drawing.Size(134, 28);
+            this.btnGravar.Size = new System.Drawing.Size(135, 28);
             this.btnGravar.TabIndex = 1;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
@@ -198,10 +197,10 @@
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Location = new System.Drawing.Point(288, 4);
+            this.btnCancelar.Location = new System.Drawing.Point(290, 4);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(134, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(135, 28);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -210,7 +209,7 @@
             // btnRemover
             // 
             this.btnRemover.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemover.Location = new System.Drawing.Point(430, 4);
+            this.btnRemover.Location = new System.Drawing.Point(433, 4);
             this.btnRemover.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(135, 28);
@@ -223,10 +222,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 346);
+            this.ClientSize = new System.Drawing.Size(750, 484);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormFornecedoresCRUD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manutenção em dados de Fornecedores";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

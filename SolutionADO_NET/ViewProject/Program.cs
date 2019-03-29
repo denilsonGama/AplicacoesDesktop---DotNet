@@ -16,7 +16,7 @@ namespace ViewProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormFornecedoresCRUD());
+            Application.Run(new FormJanelaPrincipal());
         }
     }
 }

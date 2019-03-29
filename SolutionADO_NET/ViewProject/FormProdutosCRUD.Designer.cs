@@ -263,6 +263,7 @@
             this.ClientSize = new System.Drawing.Size(653, 521);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormProdutosCRUD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Produtos";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
