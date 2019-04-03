@@ -1,4 +1,5 @@
-﻿using ADO_NETProject01;
+﻿
+using ADO_NETProject01;
 using ModelProject;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,23 @@ namespace DALProject
             connection.Close();
         }
 
+        public DataTable GetAllAsDataTable()
+        {
+            var adapter = new SqlDataAdapter("select id, nome, Cnpj from FORNECEDORES", connection);
+            var builder = new SqlCommandBuilder(adapter);
+
+            var table = new DataTable();
+            adapter.Fill(table);
+
+            connection.Close();
+            return table;
+        }
+
         public IList<Fornecedor> GetAllAsIList()
         {
             IList<Fornecedor> fornecedores = new List<Fornecedor>();
 
-            var adapter = new SqlDataAdapter("select id, nome from FORNECEDORES", connection);
+            var adapter = new SqlDataAdapter("select id, nome, Cnpj from FORNECEDORES", connection);
             var builder = new SqlCommandBuilder(adapter);
 
             var table = new DataTable();
@@ -66,6 +79,7 @@ namespace DALProject
             }
         }
 
+       
         private void Insert(Fornecedor fornecedor)
         {
 
@@ -83,12 +97,11 @@ namespace DALProject
             var command = new SqlCommand("select id, cnpj, nome from FORNECEDORES where id = @id", connection);
             command.Parameters.AddWithValue("@id", id);
             connection.Open();
-
             using (SqlDataReader reader = command.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    fornecedor.Id = reader.GetInt32(0);
+                    fornecedor.Id = reader.GetInt64(0);
                     fornecedor.CNPJ = reader.GetString(1);
                     fornecedor.Nome = reader.GetString(2);
                 }

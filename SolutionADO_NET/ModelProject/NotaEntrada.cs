@@ -1,7 +1,7 @@
-﻿using ModelProject;
+﻿
+using ModelProject;
 using System;
 using System.Collections.Generic;
-
 
 namespace ADO_NETProject01
 {
@@ -14,24 +14,20 @@ namespace ADO_NETProject01
         public DateTime DataEntrada { get; set; }
         public IList<ProdutoNotaEntrada> Produtos { get; set; }
 
+        //Conforme istruçoes pagina 212
         public NotaEntrada()
         {
-            this.Id = null;
             this.Produtos = new List<ProdutoNotaEntrada>();
         }
-
         public void RegistrarProduto(ProdutoNotaEntrada produto)
         {
-            if (this.Produtos.Contains(produto))
-                this.Produtos.Remove(produto);
-            this.Produtos.Add(produto);
+            if (!this.Produtos.Contains(produto))
+                this.Produtos.Add(produto);
         }
-
         public void RemoverProduto(ProdutoNotaEntrada produto)
         {
             this.Produtos.Remove(produto);
         }
-
         public void RemoverTodosProdutos()
         {
             this.Produtos.Clear();

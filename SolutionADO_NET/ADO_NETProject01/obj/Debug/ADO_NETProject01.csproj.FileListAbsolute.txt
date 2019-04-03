@@ -2,7 +2,7 @@ F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProjec
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\bin\Debug\App_Data\ADO_NETDataBase_log.ldf
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\bin\Debug\ADO_NETProject01.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\bin\Debug\ADO_NETProject01.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.csprojAssemblyReference.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.csproj.CoreCompileInputs.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.pdb
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.csprojAssemblyReference.cache

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DALProduto.cs" />
     <Compile Include="DAL_Fornecedor.cs" />
+    <Compile Include="DAL_NotaEntrada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
