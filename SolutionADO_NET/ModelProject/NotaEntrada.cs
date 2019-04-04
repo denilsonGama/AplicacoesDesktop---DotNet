@@ -10,6 +10,7 @@ namespace ADO_NETProject01
         public long? Id { get; set; }
         public string Numero { get; set; }
         public Fornecedor FornecedorNota { get; set; }
+        public ProdutoNotaEntrada ProdutoCompra { get; set; }
         public DateTime DataEmissao { get; set; }
         public DateTime DataEntrada { get; set; }
         public IList<ProdutoNotaEntrada> Produtos { get; set; }

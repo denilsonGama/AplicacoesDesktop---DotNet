@@ -52,6 +52,11 @@ namespace ViewProject
 
         }
 
+        private void BtnCancelarNota_Click(object sender, EventArgs e)
+        {
+            ClearControlsNota();
+        }
+        
         private void btnGravarNota_Click(object sender, System.EventArgs e)
         {
             dalNotaEntrada.Save(new NotaEntrada()
@@ -106,6 +111,42 @@ namespace ViewProject
             btnGravarProduto.Enabled = newStatus;
             btnCancelarProduto.Enabled = newStatus;
             btnRemoverProduto.Enabled = newStatus;
+        }
+
+        private void BtnNovoProduto_Click(object sender, EventArgs e)
+        {
+            ClearControlsProduto();
+            if (txtIDNotaEntrada.Text == string.Empty)
+            {
+                MessageBox.Show("Selecione a NOTA, que terá inserção de produtos, no GRID");
+            }
+            else
+            {
+                ChangeStatusOfControls(true);
+            }
+        }
+
+        private void ClearControlsProduto()
+        {
+            dgvProdutos.ClearSelection();
+            txtIDProduto.Text = string.Empty;
+            cbxProduto.SelectedIndex = -1;
+            txtCusto.Text = string.Empty;
+            txtQuantidade.Text = string.Empty;
+            cbxProduto.Focus();
+        }
+
+        private void BtnGravarProduto_Click(object sender, EventArgs e)
+        {
+            dalNotaEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
+            {
+                Id = string.IsNullOrEmpty(txtIDProduto.Text) ? (long?)null : Convert.ToInt64(txtIDProduto.Text),
+                ProdutoNota = (Produto)cbxProduto.SelectedItem,
+                PrecoCustoCompra = Convert.ToDouble(txtCusto.Text),
+                QuantidadeCompra = Convert.ToDouble(txtQuantidade.Text)
+            });
+            MessageBox.Show("Manutenção realizada com sucesso");
+            ClearControls();
         }
     }
 }
