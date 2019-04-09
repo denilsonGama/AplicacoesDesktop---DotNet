@@ -85,12 +85,34 @@ namespace ADO_NETProject01
                         Id = Convert.ToInt64(row["id"]),
                         Descricao = (string) row["descricao"],
                         PrecoDeCusto = Convert.ToDouble(row["precodecusto"]),
-                        PrecoDeVenda = Convert.ToDouble(row["precodevenda"])
+                        PrecoDeVenda = Convert.ToDouble(row["precodevenda"]),
+                        Estoque = Convert.ToDouble(row["estoque"])
                     }
                 );
             }
             return produtos;
         }
 
-     }
+        public Produto GetById(long id)
+        {
+            Produto produto = new Produto();
+            var command = new SqlCommand("select id, descricao, precodecusto, precodevenda, estoque from PRODUTOS where id = @id", connection);
+            command.Parameters.AddWithValue("@id", id);
+            connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    produto.Id = reader.GetInt64(0);
+                    produto.Descricao = reader.GetString(1);
+                    produto.PrecoDeCusto = Convert.ToDouble(reader[2]);
+                    produto.PrecoDeVenda = Convert.ToDouble(reader[3]);
+                    produto.Estoque = Convert.ToDouble(reader[4]);
+                }
+            }
+            connection.Close();
+            return produto;
+        }
+
+    }
 }

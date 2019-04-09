@@ -5,7 +5,7 @@ namespace ADO_NETProject01
     public class ProdutoNotaEntrada
     {
         public long? Id { get; set; }
-        public Produto ProdutoNota { get; set; }
+        public Produto ProdutoCompra { get; set; }
         public double PrecoCustoCompra { get; set; }
         public double QuantidadeCompra { get; set; }
 
@@ -37,7 +37,7 @@ namespace ADO_NETProject01
 
         public override int GetHashCode()
         {
-            return ProdutoNota.GetHashCode();
+            return ProdutoCompra.GetHashCode();
         }
 
      }

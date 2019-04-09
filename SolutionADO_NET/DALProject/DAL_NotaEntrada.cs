@@ -103,32 +103,4 @@ public class DAL_NotaEntrada
         return notaEntrada;
     }
 
-    /*public ProdutoNotaEntrada ProdutoGetById(long id)
-    {
-        ProdutoNotaEntrada produtoNotaEntrada = new ProdutoNotaEntrada();
-        DAL_Produto dal_Produto = new DAL_Produto();
-        long idProduto = -1;
-        var command = new SqlCommand("select id, idProduto, precoCustoCompra, QuantidadeCompra," +
-                                     "from PRODUTONOTADEENTRADA where id = @id", connection);
-
-        command.Parameters.AddWithValue("@id", id);
-        connection.Open();
-
-        using (SqlDataReader reader = command.ExecuteReader())
-        {
-            while (reader.Read())
-            {
-                produtoNotaEntrada.Id = reader.GetInt64(0);
-                idProduto = reader.GetInt64(1);
-                produtoNotaEntrada.PrecoCustoCompra = reader.GetDouble(2);
-                produtoNotaEntrada.QuantidadeCompra = reader.GetDouble(3);
-                
-            }
-        }
-        connection.Close();
-        if (idProduto > 0)
-            produtoNotaEntrada.ProdutoNota = DAL.ProdutoGetById(idProduto);
-
-        return produtoNotaEntrada;
-    }*/
 }

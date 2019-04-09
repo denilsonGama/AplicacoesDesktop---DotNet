@@ -12,7 +12,7 @@ namespace ViewProject
         private DAL_Produto dalProduto = new DAL_Produto();
         private DAL_ProdutoNotaDeEntrada dalProdutoNotaDeEntrada = new DAL_ProdutoNotaDeEntrada();
         private NotaEntrada notaAtual;
-        //private ProdutoNotaEntrada produtoAtual;
+        private ProdutoNotaEntrada produtoAtual;
 
         public FormNotasEntradaCRUD()
         {
@@ -108,23 +108,17 @@ namespace ViewProject
             dtpEntrada.Value = notaAtual.DataEntrada;
             cbxFornecedor.SelectedItem = notaAtual.FornecedorNota;
 
-            /*this.produtoAtual = dalNotaEntrada.GetById(Convert.ToInt64(dgvProdutos.Rows[e.RowIndex].Cells[0].Value));
-            txtIDProduto.Text = produtoAtual.Id.ToString();
-            txtCusto.Text = produtoAtual.PrecoCustoCompra.ToString();
-            txtQuantidade.Text = produtoAtual.QuantidadeCompra.ToString();
-            cbxProduto.SelectedItem = produtoAtual.ProdutoNota;*/
-        }
+         }
 
         private void dgvProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0)
                 return;
-            this.notaAtual = dalNotaEntrada.GetById(Convert.ToInt64(dgvNotasEntrada.Rows[e.RowIndex].Cells[0].Value));
-            txtIDNotaEntrada.Text = notaAtual.Id.ToString();
-            txtNumero.Text = notaAtual.Numero;
-            dtpEmissao.Value = notaAtual.DataEmissao;
-            dtpEntrada.Value = notaAtual.DataEntrada;
-            cbxFornecedor.SelectedItem = notaAtual.FornecedorNota;
+            this.produtoAtual = dalProdutoNotaDeEntrada.GetById(Convert.ToInt64(dgvProdutos.Rows[e.RowIndex].Cells[0].Value));
+            txtIDProduto.Text = produtoAtual.Id.ToString();
+            txtCusto.Text = produtoAtual.PrecoCustoCompra.ToString();
+            txtQuantidade.Text = produtoAtual.QuantidadeCompra.ToString();
+            cbxProduto.SelectedItem = produtoAtual.ProdutoCompra;
         }
 
         private void ChangeStatusOfControls(bool newStatus)
@@ -158,7 +152,9 @@ namespace ViewProject
             cbxProduto.SelectedIndex = -1;
             txtCusto.Text = string.Empty;
             txtQuantidade.Text = string.Empty;
+            GetAllProdutos();
             cbxProduto.Focus();
+            this.produtoAtual = null;
         }
 
         private void BtnGravarProduto_Click(object sender, EventArgs e)
@@ -166,12 +162,12 @@ namespace ViewProject
             dalProdutoNotaDeEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
             {
                 Id = string.IsNullOrEmpty(txtIDProduto.Text) ? (long?)null : Convert.ToInt64(txtIDProduto.Text),
-                ProdutoNota = (Produto)cbxProduto.SelectedItem,
+                ProdutoCompra = (Produto)cbxProduto.SelectedItem,
                 PrecoCustoCompra = Convert.ToDouble(txtCusto.Text),
                 QuantidadeCompra = Convert.ToDouble(txtQuantidade.Text)
             });
             MessageBox.Show("Manutenção realizada com sucesso");
-            ClearControls();
+            ClearControlsProduto();
         }
     }
 }

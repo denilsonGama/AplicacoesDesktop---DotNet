@@ -1,4 +1,5 @@
 ﻿using ADO_NETProject01;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -33,7 +34,7 @@ public class DAL_ProdutoNotaDeEntrada
                                     "PrecoCustoCompra, QuantidadeCompra) " +
             "values(@idnotadeentrada, @idproduto, @precocustocompra, @quantidadecompra)", connection);
         command.Parameters.AddWithValue("@idnotadeentrada", notaEntrada.Id);
-        command.Parameters.AddWithValue("@idproduto", produto.ProdutoNota.Id);
+        command.Parameters.AddWithValue("@idproduto", produto.ProdutoCompra.Id);
         command.Parameters.AddWithValue("@precocustocompra", produto.PrecoCustoCompra);
         command.Parameters.AddWithValue("@quantidadecompra", produto.QuantidadeCompra);
         connection.Open();
@@ -45,7 +46,7 @@ public class DAL_ProdutoNotaDeEntrada
     {
         var command = new SqlCommand("update PRODUTOSNOTASDEENTRADA set IdProduto = @idproduto," +
                                      "PrecoCustoCompra = @precocustocompra, QuantidadeCompra = @quantidadecompra where (Id = @id)", connection);
-        command.Parameters.AddWithValue("@idproduto", produto.ProdutoNota.Id);
+        command.Parameters.AddWithValue("@idproduto", produto.ProdutoCompra.Id);
         command.Parameters.AddWithValue("@precocustocompra", produto.PrecoCustoCompra);
         command.Parameters.AddWithValue("@quantidadecompra", produto.QuantidadeCompra);
         command.Parameters.AddWithValue("@id", produto.Id); //produto.Id
@@ -77,4 +78,31 @@ public class DAL_ProdutoNotaDeEntrada
         return table;
     }
 
+    public ProdutoNotaEntrada GetById(long id)
+    {
+        ProdutoNotaEntrada produtoNotaEntrada = new ProdutoNotaEntrada();
+        DAL_Produto dalProduto = new DAL_Produto();
+        long idProdutoNota = -1;
+        var command = new SqlCommand("select id, idProduto, precoCustoCompra," +
+                                     "quantidadeCompra from PRODUTOSNOTASDEENTRADA where id = @id", connection);
+
+        command.Parameters.AddWithValue("@id", id);
+        connection.Open();
+
+        using (SqlDataReader reader = command.ExecuteReader())
+        {
+            while (reader.Read())
+            {
+                produtoNotaEntrada.Id = reader.GetInt64(0);
+                idProdutoNota = reader.GetInt64(1);
+                produtoNotaEntrada.PrecoCustoCompra = Convert.ToDouble(reader[2]);
+                produtoNotaEntrada.QuantidadeCompra = Convert.ToDouble(reader[3]);
+            }
+        }
+        connection.Close();
+        if (idProdutoNota > 0)
+            produtoNotaEntrada.ProdutoCompra = dalProduto.GetById(idProdutoNota);
+
+        return produtoNotaEntrada;
+    }
 }
