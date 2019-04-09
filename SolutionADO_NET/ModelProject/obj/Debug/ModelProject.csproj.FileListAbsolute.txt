@@ -1,6 +1,6 @@
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\ModelProject.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\ModelProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csprojAssemblyReference.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csproj.CoreCompileInputs.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.pdb
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csprojAssemblyReference.cache

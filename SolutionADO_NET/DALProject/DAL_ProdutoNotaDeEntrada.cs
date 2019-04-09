@@ -8,25 +8,6 @@ public class DAL_ProdutoNotaDeEntrada
 {
     private SqlConnection connection = DBConnection.DB_Connection;
 
-    private void InsertProdutosNotaDeEntrada(long? idNotaDeEntrada, IList<ProdutoNotaEntrada> produtos)
-    {
-        var command = new SqlCommand("insert into PRODUTOSNOTASDEENTRADA(IdNotaDeEntrada, IdProduto, PrecoCustoCompra," +
-                                     "QuantidadeCompra) values(@IdNotaDeEntrada, @IdProduto," +
-                                     "@PrecoCustoCompra, @QuantidadeCompra", connection);
-        connection.Open();
-
-        foreach (var produto in produtos)
-        {
-            command.Parameters.Clear();
-            command.Parameters.AddWithValue("@IdNotaDeEntrada", idNotaDeEntrada);
-            command.Parameters.AddWithValue("@IdProduto", produto.Id);
-            command.Parameters.AddWithValue("@PrecoCustoCompra", produto.PrecoCustoCompra);
-            command.Parameters.AddWithValue("@QuantidadeCompra", produto.QuantidadeCompra);
-            command.ExecuteNonQuery();
-        }
-        connection.Close();
-    }
-
     private void InsertProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto)
     {
         notaEntrada.Produtos.Add(produto);
@@ -104,5 +85,14 @@ public class DAL_ProdutoNotaDeEntrada
             produtoNotaEntrada.ProdutoCompra = dalProduto.GetById(idProdutoNota);
 
         return produtoNotaEntrada;
+    }
+
+    public void RemoveById(long? id)
+    {
+        var command = new SqlCommand("delete from PRODUTOSNOTASDEENTRADA where id = @id", connection);
+        command.Parameters.AddWithValue("@id", id);
+        connection.Open();
+        command.ExecuteNonQuery();
+        connection.Close();
     }
 }

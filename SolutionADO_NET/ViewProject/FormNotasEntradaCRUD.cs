@@ -39,41 +39,10 @@ namespace ViewProject
         private void btnNovoNota_Click(object sender, System.EventArgs e)
         {
             ClearControlsNota();
-        }
-        private void ClearControlsNota()
-        {
-            dgvNotasEntrada.ClearSelection();
-            dgvProdutos.ClearSelection();
-            txtIDNotaEntrada.Text = string.Empty;
-            cbxFornecedor.SelectedIndex = -1;
-            txtNumero.Text = string.Empty;
-            dtpEmissao.Value = DateTime.Now;
-            dtpEntrada.Value = DateTime.Now;
             cbxFornecedor.DroppedDown = true;
-
-
         }
 
-        private void BtnCancelarNota_Click(object sender, EventArgs e)
-        {
-            ClearControlsNota();
-        }
-        
-        private void btnGravarNota_Click(object sender, System.EventArgs e)
-        {
-            dalNotaEntrada.Save(new NotaEntrada()
-            {
-                Id = string.IsNullOrEmpty(txtIDNotaEntrada.Text) ? (long?)null : Convert.ToInt64(txtIDNotaEntrada.Text),
-                Numero = txtNumero.Text,
-                DataEmissao = Convert.ToDateTime(dtpEmissao.Value),
-                DataEntrada = Convert.ToDateTime(dtpEntrada.Value),
-                FornecedorNota = (Fornecedor)cbxFornecedor.SelectedItem
-            });
-            MessageBox.Show("Manutenção realizada com sucesso");
-            ClearControls();
-        }
-
-        private void ClearControls()
+        private void ClearControlsNota()
         {
             txtIDNotaEntrada.Text = string.Empty;
             txtNumero.Text = string.Empty;
@@ -83,8 +52,88 @@ namespace ViewProject
             dgvNotasEntrada.ClearSelection();
             dgvProdutos.ClearSelection();
             GetAllNotas();
-            cbxFornecedor.Focus();
+            GetAllProdutos();
             this.notaAtual = null;
+            
+            
+        }
+
+        private void BtnCancelarNota_Click(object sender, EventArgs e)
+        {
+            ClearControlsNota();
+        }
+
+        private void BtnCancelarProduto_Click(object sender, EventArgs e)
+        {
+            ClearControlsProduto();
+        }
+
+        private void btnGravarNota_Click(object sender, System.EventArgs e)
+        {
+            dalNotaEntrada.SaveNotaDeEntrada(new NotaEntrada()
+            {
+                Id = string.IsNullOrEmpty(txtIDNotaEntrada.Text) ? (long?)null : Convert.ToInt64(txtIDNotaEntrada.Text),
+                Numero = txtNumero.Text,
+                DataEmissao = Convert.ToDateTime(dtpEmissao.Value),
+                DataEntrada = Convert.ToDateTime(dtpEntrada.Value),
+                FornecedorNota = (Fornecedor)cbxFornecedor.SelectedItem
+            });
+            MessageBox.Show("Manutenção realizada com sucesso");
+            
+
+            DialogResult result = MessageBox.Show("Deseja inserir Produtos nesta Nota?","Atenção!",
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                novoProduto();
+            }
+
+            else this.Close();
+        }
+
+        private void BtnRemoverNota_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Tem certeza que deseja Excluir esta Nota?", "Atenção!",
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                removerNota();
+            }
+                     
+        }
+
+        private void removerNota()
+        {
+            if (txtIDNotaEntrada.Text == string.Empty)
+            {
+                MessageBox.Show("Selecione a NOTA a ser removido no GRID");
+            }
+            else
+            {
+                this.dalNotaEntrada.RemoveById(this.notaAtual.Id);
+                ClearControlsNota();
+                MessageBox.Show("Nota removida com sucesso");
+                GetAllNotas();
+                GetAllProdutos();
+            }
+        }
+
+        private void BtnRemoverProduto_Click(object sender, EventArgs e)
+        {
+            if (txtIDNotaEntrada.Text == string.Empty)
+            {
+                MessageBox.Show("Selecione o PRODUTO a ser removido no GRID");
+            }
+            else
+            {
+                this.dalProdutoNotaDeEntrada.RemoveById(this.produtoAtual.Id);
+                ClearControlsProduto();
+                MessageBox.Show("Produto removido com sucesso");
+                GetAllProdutos();
+            }
         }
 
         private void GetAllNotas()
@@ -121,7 +170,7 @@ namespace ViewProject
             cbxProduto.SelectedItem = produtoAtual.ProdutoCompra;
         }
 
-        private void ChangeStatusOfControls(bool newStatus)
+        private void ChangeStatusOfControlsProduto(bool newStatus)
         {
             cbxProduto.Enabled = newStatus;
             txtCusto.Enabled = newStatus;
@@ -134,6 +183,11 @@ namespace ViewProject
 
         private void BtnNovoProduto_Click(object sender, EventArgs e)
         {
+            novoProduto(); 
+        }
+
+        private void novoProduto()
+        {
             ClearControlsProduto();
             if (txtIDNotaEntrada.Text == string.Empty)
             {
@@ -141,9 +195,11 @@ namespace ViewProject
             }
             else
             {
-                ChangeStatusOfControls(true);
+                ChangeStatusOfControlsProduto(true);
+                cbxProduto.DroppedDown = true;
             }
         }
+
 
         private void ClearControlsProduto()
         {
@@ -153,7 +209,6 @@ namespace ViewProject
             txtCusto.Text = string.Empty;
             txtQuantidade.Text = string.Empty;
             GetAllProdutos();
-            cbxProduto.Focus();
             this.produtoAtual = null;
         }
 

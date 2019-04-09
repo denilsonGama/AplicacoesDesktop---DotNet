@@ -187,12 +187,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnGravarNota, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnCancelarNota, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnRemoverNota, 3, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(48, 172);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 172);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(400, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(489, 36);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // btnNovoNota
@@ -201,7 +201,7 @@
             this.btnNovoNota.Location = new System.Drawing.Point(4, 4);
             this.btnNovoNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovoNota.Name = "btnNovoNota";
-            this.btnNovoNota.Size = new System.Drawing.Size(92, 28);
+            this.btnNovoNota.Size = new System.Drawing.Size(114, 28);
             this.btnNovoNota.TabIndex = 0;
             this.btnNovoNota.Text = "Novo";
             this.btnNovoNota.UseVisualStyleBackColor = true;
@@ -210,10 +210,10 @@
             // btnGravarNota
             // 
             this.btnGravarNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGravarNota.Location = new System.Drawing.Point(104, 4);
+            this.btnGravarNota.Location = new System.Drawing.Point(126, 4);
             this.btnGravarNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnGravarNota.Name = "btnGravarNota";
-            this.btnGravarNota.Size = new System.Drawing.Size(92, 28);
+            this.btnGravarNota.Size = new System.Drawing.Size(114, 28);
             this.btnGravarNota.TabIndex = 1;
             this.btnGravarNota.Text = "Gravar";
             this.btnGravarNota.UseVisualStyleBackColor = true;
@@ -222,10 +222,10 @@
             // btnCancelarNota
             // 
             this.btnCancelarNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarNota.Location = new System.Drawing.Point(204, 4);
+            this.btnCancelarNota.Location = new System.Drawing.Point(248, 4);
             this.btnCancelarNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarNota.Name = "btnCancelarNota";
-            this.btnCancelarNota.Size = new System.Drawing.Size(92, 28);
+            this.btnCancelarNota.Size = new System.Drawing.Size(114, 28);
             this.btnCancelarNota.TabIndex = 2;
             this.btnCancelarNota.Text = "Cancelar";
             this.btnCancelarNota.UseVisualStyleBackColor = true;
@@ -234,13 +234,14 @@
             // btnRemoverNota
             // 
             this.btnRemoverNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoverNota.Location = new System.Drawing.Point(304, 4);
+            this.btnRemoverNota.Location = new System.Drawing.Point(370, 4);
             this.btnRemoverNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoverNota.Name = "btnRemoverNota";
-            this.btnRemoverNota.Size = new System.Drawing.Size(92, 28);
+            this.btnRemoverNota.Size = new System.Drawing.Size(115, 28);
             this.btnRemoverNota.TabIndex = 3;
-            this.btnRemoverNota.Text = "Remover";
+            this.btnRemoverNota.Text = "Remover Nota";
             this.btnRemoverNota.UseVisualStyleBackColor = true;
+            this.btnRemoverNota.Click += new System.EventHandler(this.BtnRemoverNota_Click);
             // 
             // lblEmissao
             // 
@@ -367,7 +368,7 @@
             this.dgvProdutos.ReadOnly = true;
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProdutos.Size = new System.Drawing.Size(489, 360);
-            this.dgvProdutos.TabIndex = 3;
+            this.dgvProdutos.TabIndex = 8;
             this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
             // 
             // txtIDProduto
@@ -379,7 +380,7 @@
             this.txtIDProduto.Margin = new System.Windows.Forms.Padding(4);
             this.txtIDProduto.Name = "txtIDProduto";
             this.txtIDProduto.Size = new System.Drawing.Size(395, 22);
-            this.txtIDProduto.TabIndex = 4;
+            this.txtIDProduto.TabIndex = 0;
             // 
             // txtCusto
             // 
@@ -405,12 +406,12 @@
             this.tableLayoutPanel4.Controls.Add(this.btnGravarProduto, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnCancelarProduto, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnRemoverProduto, 3, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(46, 142);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 142);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(404, 36);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(489, 36);
             this.tableLayoutPanel4.TabIndex = 7;
             // 
             // btnNovoProduto
@@ -419,8 +420,8 @@
             this.btnNovoProduto.Location = new System.Drawing.Point(4, 4);
             this.btnNovoProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovoProduto.Name = "btnNovoProduto";
-            this.btnNovoProduto.Size = new System.Drawing.Size(93, 28);
-            this.btnNovoProduto.TabIndex = 0;
+            this.btnNovoProduto.Size = new System.Drawing.Size(114, 28);
+            this.btnNovoProduto.TabIndex = 4;
             this.btnNovoProduto.Text = "Novo";
             this.btnNovoProduto.UseVisualStyleBackColor = true;
             this.btnNovoProduto.Click += new System.EventHandler(this.BtnNovoProduto_Click);
@@ -429,11 +430,11 @@
             // 
             this.btnGravarProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGravarProduto.Enabled = false;
-            this.btnGravarProduto.Location = new System.Drawing.Point(105, 4);
+            this.btnGravarProduto.Location = new System.Drawing.Point(126, 4);
             this.btnGravarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnGravarProduto.Name = "btnGravarProduto";
-            this.btnGravarProduto.Size = new System.Drawing.Size(93, 28);
-            this.btnGravarProduto.TabIndex = 4;
+            this.btnGravarProduto.Size = new System.Drawing.Size(114, 28);
+            this.btnGravarProduto.TabIndex = 5;
             this.btnGravarProduto.Text = "Gravar";
             this.btnGravarProduto.UseVisualStyleBackColor = true;
             this.btnGravarProduto.Click += new System.EventHandler(this.BtnGravarProduto_Click);
@@ -442,25 +443,27 @@
             // 
             this.btnCancelarProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelarProduto.Enabled = false;
-            this.btnCancelarProduto.Location = new System.Drawing.Point(206, 4);
+            this.btnCancelarProduto.Location = new System.Drawing.Point(248, 4);
             this.btnCancelarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarProduto.Name = "btnCancelarProduto";
-            this.btnCancelarProduto.Size = new System.Drawing.Size(93, 28);
-            this.btnCancelarProduto.TabIndex = 5;
+            this.btnCancelarProduto.Size = new System.Drawing.Size(114, 28);
+            this.btnCancelarProduto.TabIndex = 6;
             this.btnCancelarProduto.Text = "Cancelar";
             this.btnCancelarProduto.UseVisualStyleBackColor = true;
+            this.btnCancelarProduto.Click += new System.EventHandler(this.BtnCancelarProduto_Click);
             // 
             // btnRemoverProduto
             // 
             this.btnRemoverProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemoverProduto.Enabled = false;
-            this.btnRemoverProduto.Location = new System.Drawing.Point(307, 4);
+            this.btnRemoverProduto.Location = new System.Drawing.Point(370, 4);
             this.btnRemoverProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoverProduto.Name = "btnRemoverProduto";
-            this.btnRemoverProduto.Size = new System.Drawing.Size(93, 28);
+            this.btnRemoverProduto.Size = new System.Drawing.Size(115, 28);
             this.btnRemoverProduto.TabIndex = 7;
             this.btnRemoverProduto.Text = "Remover";
             this.btnRemoverProduto.UseVisualStyleBackColor = true;
+            this.btnRemoverProduto.Click += new System.EventHandler(this.BtnRemoverProduto_Click);
             // 
             // cbxProduto
             // 
@@ -473,7 +476,7 @@
             this.cbxProduto.Margin = new System.Windows.Forms.Padding(4);
             this.cbxProduto.Name = "cbxProduto";
             this.cbxProduto.Size = new System.Drawing.Size(395, 24);
-            this.cbxProduto.TabIndex = 8;
+            this.cbxProduto.TabIndex = 1;
             // 
             // lblQuantidade
             // 

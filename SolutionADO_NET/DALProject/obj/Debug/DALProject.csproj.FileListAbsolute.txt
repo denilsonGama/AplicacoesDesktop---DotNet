@@ -1,5 +1,3 @@
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.csprojAssemblyReference.cache
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.csproj.CoreCompileInputs.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bin\Debug\App_Data\ADO_NETDataBase.mdf
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bin\Debug\App_Data\ADO_NETDataBase_log.ldf
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bin\Debug\DALProject.dll
@@ -8,6 +6,8 @@ F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bi
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bin\Debug\ModelProject.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bin\Debug\ADO_NETProject01.pdb
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\bin\Debug\ModelProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.csproj.CoreCompileInputs.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.csproj.CopyComplete
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\DALProject\obj\Debug\DALProject.pdb

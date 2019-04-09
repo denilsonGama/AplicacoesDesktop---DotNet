@@ -1,11 +1,3 @@
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csprojAssemblyReference.cache
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormFornecedoresCRUD.resources
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormJanelaPrincipal.resources
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormNotasEntradaCRUD.resources
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormProdutosCRUD.resources
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.Properties.Resources.resources
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.GenerateResource.cache
-F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CoreCompileInputs.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\App_Data\ADO_NETDataBase.mdf
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\App_Data\ADO_NETDataBase_log.ldf
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ViewProject.exe.config
@@ -17,6 +9,14 @@ F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\b
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ADO_NETProject01.pdb
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\DALProject.pdb
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ModelProject.pdb
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csprojAssemblyReference.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormFornecedoresCRUD.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormJanelaPrincipal.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormNotasEntradaCRUD.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormProdutosCRUD.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.Properties.Resources.resources
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.GenerateResource.cache
+F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CoreCompileInputs.cache
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CopyComplete
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.exe
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.pdb
