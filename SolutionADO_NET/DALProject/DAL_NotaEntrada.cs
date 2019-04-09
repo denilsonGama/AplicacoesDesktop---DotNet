@@ -1,5 +1,6 @@
 ﻿using ADO_NETProject01;
 using DALProject;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -36,31 +37,17 @@ public class DAL_NotaEntrada
         InsertProdutosNotaDeEntrada(notaEntrada.Id, notaEntrada.Produtos);
     }
 
+    private void InsertProdutosNotaDeEntrada(long? id, IList<ProdutoNotaEntrada> produtos)
+    {
+        throw new NotImplementedException();
+    }
+
     private void DeleteAllProdutosFromNotaEntrada(long? idNotaEntrada)
     {
         var command = new SqlCommand("delete from NOTASDEENTRADA where(Id = @Id)", connection);
         command.Parameters.AddWithValue("@Id", idNotaEntrada);
         connection.Open();
         command.ExecuteNonQuery();
-        connection.Close();
-    }
-
-    private void InsertProdutosNotaDeEntrada(long? idNotaEntrada, IList<ProdutoNotaEntrada> produtos)
-    {
-        var command = new SqlCommand("insert into PRODUTOSNOTASDEENTRADA(IdNotaDeEntrada, IdProduto, PrecoCustoCompra," +
-                                     "QuantidadeCompra) values(@IdNotaDeEntrada, @IdProduto," +
-                                     "@PrecoCustoCompra, @QuantidadeCompra", connection);
-        connection.Open();
-
-        foreach (var produto in produtos)
-        {
-            command.Parameters.Clear();
-            command.Parameters.AddWithValue("@IdNotaDeEntrada", idNotaEntrada);
-            command.Parameters.AddWithValue("@IdProduto", produto.Id);
-            command.Parameters.AddWithValue("@PrecoCustoCompra", produto.PrecoCustoCompra);
-            command.Parameters.AddWithValue("@QuantidadeCompra", produto.QuantidadeCompra);
-            command.ExecuteNonQuery();
-        }
         connection.Close();
     }
 
@@ -115,74 +102,33 @@ public class DAL_NotaEntrada
 
         return notaEntrada;
     }
-    private void InsertProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto)
+
+    /*public ProdutoNotaEntrada ProdutoGetById(long id)
     {
-        notaEntrada.Produtos.Add(produto);
-        var command = new SqlCommand("insert into PRODUTOSNOTASDEENTRADA(IdNotaDeEntrada, IdProduto," +
-                                    "PrecoCustoCompra, QuantidadeCompra) " +
-            "values(@idnotadeentrada, @idproduto, @precocustocompra, @quantidadecompra)", connection);
-        command.Parameters.AddWithValue("@idnotadeentrada", notaEntrada.Id);
-        command.Parameters.AddWithValue("@idproduto", produto.Id);
-        command.Parameters.AddWithValue("@precocustocompra", produto.PrecoCustoCompra);
-        command.Parameters.AddWithValue("@quantidadecompra", produto.QuantidadeCompra);
+        ProdutoNotaEntrada produtoNotaEntrada = new ProdutoNotaEntrada();
+        DAL_Produto dal_Produto = new DAL_Produto();
+        long idProduto = -1;
+        var command = new SqlCommand("select id, idProduto, precoCustoCompra, QuantidadeCompra," +
+                                     "from PRODUTONOTADEENTRADA where id = @id", connection);
+
+        command.Parameters.AddWithValue("@id", id);
         connection.Open();
-        command.ExecuteNonQuery();
+
+        using (SqlDataReader reader = command.ExecuteReader())
+        {
+            while (reader.Read())
+            {
+                produtoNotaEntrada.Id = reader.GetInt64(0);
+                idProduto = reader.GetInt64(1);
+                produtoNotaEntrada.PrecoCustoCompra = reader.GetDouble(2);
+                produtoNotaEntrada.QuantidadeCompra = reader.GetDouble(3);
+                
+            }
+        }
         connection.Close();
-    }
+        if (idProduto > 0)
+            produtoNotaEntrada.ProdutoNota = DAL.ProdutoGetById(idProduto);
 
-    /* private void UpdateProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto)
-        
-    {
-        var command = new SqlCommand("update PRODUTOSNOTASDEENTRADA set idproduto = @idproduto," +
-                                     "precocustocompra = @precocustocompra, quantidadecompra = @quantidadecompra," +
-                                     "idnotadeentrada = @idnotadeentrada where(id = @id)", this.connection);
-        command.Parameters.AddWithValue("@idproduto", produto.ProdutoNota.Id);
-        command.Parameters.AddWithValue("@precocustocompra", produto.PrecoCustoCompra);
-        command.Parameters.AddWithValue("@quantidadecompra", produto.QuantidadeCompra);
-        command.Parameters.AddWithValue("@idnotadeentrada", notaEntrada.Id);
-        command.Parameters.AddWithValue("@Id", '1');
-        connection.Open();
-        command.ExecuteNonQuery();
-        connection.Close();
-        InsertProdutosNotaDeEntrada(notaEntrada.Id, notaEntrada.Produtos); */
-
-    /*
-
-    private void Update(NotaEntrada notaEntrada)
-{
-    var command = new SqlCommand("update NOTASDEENTRADA set IdFornecedor = @IdFornecedor, Numero = @Numero, DataEmissao = @DataEmissao," +
-                                 "DataEntrada = @DataEntrada where(Id = @Id)", connection);
-    command.Parameters.AddWithValue("@IdFornecedor", notaEntrada.FornecedorNota.Id);
-    command.Parameters.AddWithValue("@Numero", notaEntrada.Numero);
-    command.Parameters.AddWithValue("@DataEmissao", notaEntrada.DataEmissao);
-    command.Parameters.AddWithValue("@DataEntrada", notaEntrada.DataEntrada);
-    command.Parameters.AddWithValue("@Id", notaEntrada.Id);
-    connection.Open();
-    command.ExecuteNonQuery();
-    connection.Close();
-    DeleteAllProdutosFromNotaEntrada(notaEntrada.Id);
-    InsertProdutosNotaDeEntrada(notaEntrada.Id, notaEntrada.Produtos);
+        return produtoNotaEntrada;
     }*/
-
-    private void UpdateProduto(ProdutoNotaEntrada produto)
-    {
-        var command = new SqlCommand("update PRODUTOSNOTASDEENTRADA set IdProduto = @idproduto," +
-                                     "PrecoCustoCompra = @precocustocompra, QuantidadeCompra = @quantidadecompra) where (Id = @id)", connection);
-        command.Parameters.AddWithValue("@idproduto", produto.ProdutoNota.Id);
-        command.Parameters.AddWithValue("@precocustocompra", produto.PrecoCustoCompra);
-        command.Parameters.AddWithValue("@quantidadecompra", produto.QuantidadeCompra);
-        command.Parameters.AddWithValue("@id", produto.Id); //produto.Id
-        connection.Open();
-        command.ExecuteNonQuery();
-        connection.Close();
-    }
-
-    public void SaveProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto
-        )
-    {
-        if (notaEntrada.Id == null)
-            this.InsertProduto(notaEntrada, produto);
-        else
-            this.UpdateProduto(produto);
-    }
 }

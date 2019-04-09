@@ -10,14 +10,16 @@ namespace ViewProject
         private DAL_NotaEntrada dalNotaEntrada = new DAL_NotaEntrada();
         private DAL_Fornecedor dalFornecedor = new DAL_Fornecedor();
         private DAL_Produto dalProduto = new DAL_Produto();
-
+        private DAL_ProdutoNotaDeEntrada dalProdutoNotaDeEntrada = new DAL_ProdutoNotaDeEntrada();
         private NotaEntrada notaAtual;
+        //private ProdutoNotaEntrada produtoAtual;
 
         public FormNotasEntradaCRUD()
         {
             InitializeComponent();
             InicializaComboBoxs();
             GetAllNotas();
+            GetAllProdutos();
         }
 
         private void InicializaComboBoxs()
@@ -90,7 +92,30 @@ namespace ViewProject
             dgvNotasEntrada.DataSource = dalNotaEntrada.GetAllAsDataTable();
         }
 
+        private void GetAllProdutos()
+        {
+            dgvProdutos.DataSource = dalProdutoNotaDeEntrada.GetAllAsDataTable();
+        }
+
         private void dgvNotasEntrada_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                return;
+            this.notaAtual = dalNotaEntrada.GetById(Convert.ToInt64(dgvNotasEntrada.Rows[e.RowIndex].Cells[0].Value));
+            txtIDNotaEntrada.Text = notaAtual.Id.ToString();
+            txtNumero.Text = notaAtual.Numero;
+            dtpEmissao.Value = notaAtual.DataEmissao;
+            dtpEntrada.Value = notaAtual.DataEntrada;
+            cbxFornecedor.SelectedItem = notaAtual.FornecedorNota;
+
+            /*this.produtoAtual = dalNotaEntrada.GetById(Convert.ToInt64(dgvProdutos.Rows[e.RowIndex].Cells[0].Value));
+            txtIDProduto.Text = produtoAtual.Id.ToString();
+            txtCusto.Text = produtoAtual.PrecoCustoCompra.ToString();
+            txtQuantidade.Text = produtoAtual.QuantidadeCompra.ToString();
+            cbxProduto.SelectedItem = produtoAtual.ProdutoNota;*/
+        }
+
+        private void dgvProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0)
                 return;
@@ -138,7 +163,7 @@ namespace ViewProject
 
         private void BtnGravarProduto_Click(object sender, EventArgs e)
         {
-            dalNotaEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
+            dalProdutoNotaDeEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
             {
                 Id = string.IsNullOrEmpty(txtIDProduto.Text) ? (long?)null : Convert.ToInt64(txtIDProduto.Text),
                 ProdutoNota = (Produto)cbxProduto.SelectedItem,
