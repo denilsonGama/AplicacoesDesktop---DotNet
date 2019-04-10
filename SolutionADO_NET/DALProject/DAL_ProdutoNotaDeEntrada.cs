@@ -1,6 +1,5 @@
 ﻿using ADO_NETProject01;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -36,13 +35,12 @@ public class DAL_ProdutoNotaDeEntrada
         connection.Close();
     }
 
-    public void SaveProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto
-        )
-    {
+    public void SaveProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto){
+
         if (produto.Id == null)
-            this.InsertProduto(notaEntrada, produto);
-        else
-            this.UpdateProduto(produto);
+                this.InsertProduto(notaEntrada, produto);
+            else
+                this.UpdateProduto(produto);       
     }
 
     public DataTable GetAllAsDataTable()

@@ -53,10 +53,10 @@
             this.txtIDProduto = new System.Windows.Forms.TextBox();
             this.txtCusto = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnNovoProduto = new System.Windows.Forms.Button();
             this.btnGravarProduto = new System.Windows.Forms.Button();
             this.btnCancelarProduto = new System.Windows.Forms.Button();
             this.btnRemoverProduto = new System.Windows.Forms.Button();
+            this.btnNovoProduto = new System.Windows.Forms.Button();
             this.cbxProduto = new System.Windows.Forms.ComboBox();
             this.lblQuantidade = new System.Windows.Forms.Label();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(497, 566);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(573, 566);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // lblIDNota
@@ -149,7 +149,7 @@
             this.dgvNotasEntrada.Name = "dgvNotasEntrada";
             this.dgvNotasEntrada.ReadOnly = true;
             this.dgvNotasEntrada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNotasEntrada.Size = new System.Drawing.Size(489, 330);
+            this.dgvNotasEntrada.Size = new System.Drawing.Size(565, 330);
             this.dgvNotasEntrada.TabIndex = 3;
             this.dgvNotasEntrada.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNotasEntrada_CellClick);
             // 
@@ -161,7 +161,7 @@
             this.txtIDNotaEntrada.Location = new System.Drawing.Point(97, 4);
             this.txtIDNotaEntrada.Margin = new System.Windows.Forms.Padding(4);
             this.txtIDNotaEntrada.Name = "txtIDNotaEntrada";
-            this.txtIDNotaEntrada.Size = new System.Drawing.Size(396, 22);
+            this.txtIDNotaEntrada.Size = new System.Drawing.Size(472, 22);
             this.txtIDNotaEntrada.TabIndex = 4;
             // 
             // txtNumero
@@ -187,12 +187,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnGravarNota, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnCancelarNota, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnRemoverNota, 3, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 172);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(40, 172);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(489, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(492, 36);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // btnNovoNota
@@ -201,7 +201,7 @@
             this.btnNovoNota.Location = new System.Drawing.Point(4, 4);
             this.btnNovoNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovoNota.Name = "btnNovoNota";
-            this.btnNovoNota.Size = new System.Drawing.Size(114, 28);
+            this.btnNovoNota.Size = new System.Drawing.Size(115, 28);
             this.btnNovoNota.TabIndex = 0;
             this.btnNovoNota.Text = "Novo";
             this.btnNovoNota.UseVisualStyleBackColor = true;
@@ -210,10 +210,10 @@
             // btnGravarNota
             // 
             this.btnGravarNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGravarNota.Location = new System.Drawing.Point(126, 4);
+            this.btnGravarNota.Location = new System.Drawing.Point(127, 4);
             this.btnGravarNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnGravarNota.Name = "btnGravarNota";
-            this.btnGravarNota.Size = new System.Drawing.Size(114, 28);
+            this.btnGravarNota.Size = new System.Drawing.Size(115, 28);
             this.btnGravarNota.TabIndex = 1;
             this.btnGravarNota.Text = "Gravar";
             this.btnGravarNota.UseVisualStyleBackColor = true;
@@ -222,10 +222,10 @@
             // btnCancelarNota
             // 
             this.btnCancelarNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarNota.Location = new System.Drawing.Point(248, 4);
+            this.btnCancelarNota.Location = new System.Drawing.Point(250, 4);
             this.btnCancelarNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarNota.Name = "btnCancelarNota";
-            this.btnCancelarNota.Size = new System.Drawing.Size(114, 28);
+            this.btnCancelarNota.Size = new System.Drawing.Size(115, 28);
             this.btnCancelarNota.TabIndex = 2;
             this.btnCancelarNota.Text = "Cancelar";
             this.btnCancelarNota.UseVisualStyleBackColor = true;
@@ -234,7 +234,7 @@
             // btnRemoverNota
             // 
             this.btnRemoverNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoverNota.Location = new System.Drawing.Point(370, 4);
+            this.btnRemoverNota.Location = new System.Drawing.Point(373, 4);
             this.btnRemoverNota.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoverNota.Name = "btnRemoverNota";
             this.btnRemoverNota.Size = new System.Drawing.Size(115, 28);
@@ -272,7 +272,7 @@
             this.cbxFornecedor.Location = new System.Drawing.Point(97, 34);
             this.cbxFornecedor.Margin = new System.Windows.Forms.Padding(4);
             this.cbxFornecedor.Name = "cbxFornecedor";
-            this.cbxFornecedor.Size = new System.Drawing.Size(396, 24);
+            this.cbxFornecedor.Size = new System.Drawing.Size(472, 24);
             this.cbxFornecedor.TabIndex = 10;
             // 
             // dtpEmissao
@@ -309,7 +309,7 @@
             this.tableLayoutPanel3.Controls.Add(this.lblQuantidade, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtQuantidade, 1, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(526, 29);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(602, 29);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 8;
@@ -321,7 +321,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(497, 566);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(574, 566);
             this.tableLayoutPanel3.TabIndex = 8;
             // 
             // lblIDProduto
@@ -367,7 +367,7 @@
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProdutos.Size = new System.Drawing.Size(489, 360);
+            this.dgvProdutos.Size = new System.Drawing.Size(566, 360);
             this.dgvProdutos.TabIndex = 8;
             this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
             // 
@@ -379,7 +379,7 @@
             this.txtIDProduto.Location = new System.Drawing.Point(98, 4);
             this.txtIDProduto.Margin = new System.Windows.Forms.Padding(4);
             this.txtIDProduto.Name = "txtIDProduto";
-            this.txtIDProduto.Size = new System.Drawing.Size(395, 22);
+            this.txtIDProduto.Size = new System.Drawing.Size(472, 22);
             this.txtIDProduto.TabIndex = 0;
             // 
             // txtCusto
@@ -402,38 +402,27 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.Controls.Add(this.btnNovoProduto, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnGravarProduto, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnCancelarProduto, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnRemoverProduto, 3, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 142);
+            this.tableLayoutPanel4.Controls.Add(this.btnNovoProduto, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(41, 142);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(489, 36);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(492, 36);
             this.tableLayoutPanel4.TabIndex = 7;
-            // 
-            // btnNovoProduto
-            // 
-            this.btnNovoProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNovoProduto.Location = new System.Drawing.Point(4, 4);
-            this.btnNovoProduto.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNovoProduto.Name = "btnNovoProduto";
-            this.btnNovoProduto.Size = new System.Drawing.Size(114, 28);
-            this.btnNovoProduto.TabIndex = 4;
-            this.btnNovoProduto.Text = "Novo";
-            this.btnNovoProduto.UseVisualStyleBackColor = true;
-            this.btnNovoProduto.Click += new System.EventHandler(this.BtnNovoProduto_Click);
             // 
             // btnGravarProduto
             // 
             this.btnGravarProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGravarProduto.Enabled = false;
-            this.btnGravarProduto.Location = new System.Drawing.Point(126, 4);
+            this.btnGravarProduto.Location = new System.Drawing.Point(127, 4);
             this.btnGravarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnGravarProduto.Name = "btnGravarProduto";
-            this.btnGravarProduto.Size = new System.Drawing.Size(114, 28);
+            this.btnGravarProduto.Size = new System.Drawing.Size(115, 28);
             this.btnGravarProduto.TabIndex = 5;
             this.btnGravarProduto.Text = "Gravar";
             this.btnGravarProduto.UseVisualStyleBackColor = true;
@@ -443,10 +432,10 @@
             // 
             this.btnCancelarProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelarProduto.Enabled = false;
-            this.btnCancelarProduto.Location = new System.Drawing.Point(248, 4);
+            this.btnCancelarProduto.Location = new System.Drawing.Point(250, 4);
             this.btnCancelarProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarProduto.Name = "btnCancelarProduto";
-            this.btnCancelarProduto.Size = new System.Drawing.Size(114, 28);
+            this.btnCancelarProduto.Size = new System.Drawing.Size(115, 28);
             this.btnCancelarProduto.TabIndex = 6;
             this.btnCancelarProduto.Text = "Cancelar";
             this.btnCancelarProduto.UseVisualStyleBackColor = true;
@@ -456,7 +445,7 @@
             // 
             this.btnRemoverProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemoverProduto.Enabled = false;
-            this.btnRemoverProduto.Location = new System.Drawing.Point(370, 4);
+            this.btnRemoverProduto.Location = new System.Drawing.Point(373, 4);
             this.btnRemoverProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoverProduto.Name = "btnRemoverProduto";
             this.btnRemoverProduto.Size = new System.Drawing.Size(115, 28);
@@ -465,17 +454,28 @@
             this.btnRemoverProduto.UseVisualStyleBackColor = true;
             this.btnRemoverProduto.Click += new System.EventHandler(this.BtnRemoverProduto_Click);
             // 
+            // btnNovoProduto
+            // 
+            this.btnNovoProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovoProduto.Location = new System.Drawing.Point(4, 4);
+            this.btnNovoProduto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNovoProduto.Name = "btnNovoProduto";
+            this.btnNovoProduto.Size = new System.Drawing.Size(115, 28);
+            this.btnNovoProduto.TabIndex = 4;
+            this.btnNovoProduto.Text = "Novo";
+            this.btnNovoProduto.UseVisualStyleBackColor = true;
+            this.btnNovoProduto.Click += new System.EventHandler(this.BtnNovoProduto_Click);
+            // 
             // cbxProduto
             // 
             this.cbxProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxProduto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxProduto.Enabled = false;
             this.cbxProduto.FormattingEnabled = true;
             this.cbxProduto.Location = new System.Drawing.Point(98, 34);
             this.cbxProduto.Margin = new System.Windows.Forms.Padding(4);
             this.cbxProduto.Name = "cbxProduto";
-            this.cbxProduto.Size = new System.Drawing.Size(395, 24);
+            this.cbxProduto.Size = new System.Drawing.Size(472, 24);
             this.cbxProduto.TabIndex = 1;
             // 
             // lblQuantidade
@@ -514,7 +514,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1027, 599);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1180, 599);
             this.tableLayoutPanel5.TabIndex = 9;
             // 
             // lblCorpoDaNota
@@ -522,7 +522,7 @@
             this.lblCorpoDaNota.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCorpoDaNota.AutoSize = true;
             this.lblCorpoDaNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorpoDaNota.Location = new System.Drawing.Point(176, 0);
+            this.lblCorpoDaNota.Location = new System.Drawing.Point(214, 0);
             this.lblCorpoDaNota.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorpoDaNota.Name = "lblCorpoDaNota";
             this.lblCorpoDaNota.Size = new System.Drawing.Size(152, 25);
@@ -534,7 +534,7 @@
             this.lblProdutosComprados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblProdutosComprados.AutoSize = true;
             this.lblProdutosComprados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProdutosComprados.Location = new System.Drawing.Point(669, 0);
+            this.lblProdutosComprados.Location = new System.Drawing.Point(784, 0);
             this.lblProdutosComprados.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProdutosComprados.Name = "lblProdutosComprados";
             this.lblProdutosComprados.Size = new System.Drawing.Size(210, 25);
@@ -545,7 +545,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 599);
+            this.ClientSize = new System.Drawing.Size(1180, 599);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormNotasEntradaCRUD";

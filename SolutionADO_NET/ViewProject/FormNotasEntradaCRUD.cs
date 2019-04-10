@@ -70,69 +70,94 @@ namespace ViewProject
 
         private void btnGravarNota_Click(object sender, System.EventArgs e)
         {
-            dalNotaEntrada.SaveNotaDeEntrada(new NotaEntrada()
+            try
             {
-                Id = string.IsNullOrEmpty(txtIDNotaEntrada.Text) ? (long?)null : Convert.ToInt64(txtIDNotaEntrada.Text),
-                Numero = txtNumero.Text,
-                DataEmissao = Convert.ToDateTime(dtpEmissao.Value),
-                DataEntrada = Convert.ToDateTime(dtpEntrada.Value),
-                FornecedorNota = (Fornecedor)cbxFornecedor.SelectedItem
-            });
-            MessageBox.Show("Manutenção realizada com sucesso");
-            
+                dalNotaEntrada.SaveNotaDeEntrada(new NotaEntrada()
+                {
+                    Id = string.IsNullOrEmpty(txtIDNotaEntrada.Text) ? (long?)null : Convert.ToInt64(txtIDNotaEntrada.Text),
+                    Numero = txtNumero.Text,
+                    DataEmissao = Convert.ToDateTime(dtpEmissao.Value),
+                    DataEntrada = Convert.ToDateTime(dtpEntrada.Value),
+                    FornecedorNota = (Fornecedor)cbxFornecedor.SelectedItem
+                });
+                MessageBox.Show("Manutenção realizada com sucesso");
 
-            DialogResult result = MessageBox.Show("Deseja inserir Produtos nesta Nota?","Atenção!",
-                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (result == DialogResult.Yes)
-            {
-                novoProduto();
+                DialogResult result = MessageBox.Show("Deseja inserir Produtos nesta Nota?", "Atenção!",
+                                       MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    novoProduto();
+                }
+
+                else this.Close();
             }
-
-            else this.Close();
+            catch
+            {
+                MessageBox.Show("Selecione o Item que será atualizado no GRID");
+            }
         }
 
         private void BtnRemoverNota_Click(object sender, EventArgs e)
         {
-
-            DialogResult result = MessageBox.Show("Tem certeza que deseja Excluir esta Nota?", "Atenção!",
-                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
+            try
             {
-                removerNota();
+                if (txtIDNotaEntrada.Text == string.Empty)
+                {
+                    MessageBox.Show("Selecione a NOTA a ser removido no GRID");
+                }
+
+                else
+                {
+                    DialogResult result = MessageBox.Show("Tem certeza que deseja Excluir esta Nota?", "Atenção!",
+                                       MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+
+                        this.dalNotaEntrada.RemoveById(this.notaAtual.Id);
+                        ClearControlsNota();
+                        MessageBox.Show("Nota removida com sucesso");
+                        GetAllNotas();
+                        GetAllProdutos();
+                    }
+                }
             }
-                     
+            catch
+            {
+                MessageBox.Show("Não foi possivel executar a operação. Tente novamente");
+                this.Close();
+            }
         }
-
-        private void removerNota()
-        {
-            if (txtIDNotaEntrada.Text == string.Empty)
-            {
-                MessageBox.Show("Selecione a NOTA a ser removido no GRID");
-            }
-            else
-            {
-                this.dalNotaEntrada.RemoveById(this.notaAtual.Id);
-                ClearControlsNota();
-                MessageBox.Show("Nota removida com sucesso");
-                GetAllNotas();
-                GetAllProdutos();
-            }
-        }
-
+        
         private void BtnRemoverProduto_Click(object sender, EventArgs e)
         {
-            if (txtIDNotaEntrada.Text == string.Empty)
+            try
             {
-                MessageBox.Show("Selecione o PRODUTO a ser removido no GRID");
+                if (txtIDProduto.Text == string.Empty)
+                {
+                    MessageBox.Show("Selecione o PRODUTO a ser removido no GRID");
+                }
+                else
+                {
+                    DialogResult result = MessageBox.Show("Tem certeza que deseja Excluir este produto?", "Atenção!",
+                                           MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+
+                        this.dalProdutoNotaDeEntrada.RemoveById(this.produtoAtual.Id);
+                        ClearControlsProduto();
+                        MessageBox.Show("Produto removido com sucesso");
+                        GetAllProdutos();
+                    }
+                }
             }
-            else
+            catch
             {
-                this.dalProdutoNotaDeEntrada.RemoveById(this.produtoAtual.Id);
-                ClearControlsProduto();
-                MessageBox.Show("Produto removido com sucesso");
-                GetAllProdutos();
+                MessageBox.Show("Não foi possivel executar a operação. Tente novamente");
+                this.Close();
             }
         }
 
@@ -168,6 +193,7 @@ namespace ViewProject
             txtCusto.Text = produtoAtual.PrecoCustoCompra.ToString();
             txtQuantidade.Text = produtoAtual.QuantidadeCompra.ToString();
             cbxProduto.SelectedItem = produtoAtual.ProdutoCompra;
+            ChangeStatusOfControlsProduto(true);
         }
 
         private void ChangeStatusOfControlsProduto(bool newStatus)
@@ -180,12 +206,12 @@ namespace ViewProject
             btnCancelarProduto.Enabled = newStatus;
             btnRemoverProduto.Enabled = newStatus;
         }
-
         private void BtnNovoProduto_Click(object sender, EventArgs e)
         {
-            novoProduto(); 
+            novoProduto();
         }
 
+        
         private void novoProduto()
         {
             ClearControlsProduto();
@@ -203,26 +229,34 @@ namespace ViewProject
 
         private void ClearControlsProduto()
         {
-            dgvProdutos.ClearSelection();
             txtIDProduto.Text = string.Empty;
-            cbxProduto.SelectedIndex = -1;
             txtCusto.Text = string.Empty;
             txtQuantidade.Text = string.Empty;
+            cbxProduto.SelectedIndex = -1;
+            dgvProdutos.ClearSelection();
             GetAllProdutos();
             this.produtoAtual = null;
         }
 
-        private void BtnGravarProduto_Click(object sender, EventArgs e)
-        {
-            dalProdutoNotaDeEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
+        private void BtnGravarProduto_Click(object sender, EventArgs e) {
+
+            try
             {
-                Id = string.IsNullOrEmpty(txtIDProduto.Text) ? (long?)null : Convert.ToInt64(txtIDProduto.Text),
-                ProdutoCompra = (Produto)cbxProduto.SelectedItem,
-                PrecoCustoCompra = Convert.ToDouble(txtCusto.Text),
-                QuantidadeCompra = Convert.ToDouble(txtQuantidade.Text)
-            });
-            MessageBox.Show("Manutenção realizada com sucesso");
-            ClearControlsProduto();
+                dalProdutoNotaDeEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
+                {
+                    Id = string.IsNullOrEmpty(txtIDProduto.Text) ? (long?)null : Convert.ToInt64(txtIDProduto.Text),
+                    ProdutoCompra = (Produto)cbxProduto.SelectedItem,
+                    PrecoCustoCompra = Convert.ToDouble(txtCusto.Text),
+                    QuantidadeCompra = Convert.ToDouble(txtQuantidade.Text)
+                });
+                MessageBox.Show("Manutenção realizada com sucesso");
+                ClearControlsProduto();
+            }
+            catch
+            {
+                MessageBox.Show("Selecione o Item que será atualizado no GRID");
+            }
         }
+           
     }
 }
