@@ -46,15 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormFornecedoresCRUD.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormFornecedoresCRUD.cs" />
     <Compile Include="FormFornecedoresCRUD.Designer.cs">
       <DependentUpon>FormFornecedoresCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormJanelaPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormJanelaPrincipal.cs" />
     <Compile Include="FormJanelaPrincipal.Designer.cs">
       <DependentUpon>FormJanelaPrincipal.cs</DependentUpon>
     </Compile>

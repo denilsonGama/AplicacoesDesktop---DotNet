@@ -40,16 +40,16 @@ public class DAL_NotaEntrada
     private void InsertProdutosNotaDeEntrada(long? idNotaEntrada, IList<ProdutoNotaEntrada> produtos)
     {
         var command = new SqlCommand("insert into " +
-            "PRODUTOSNOTASDEENTRADA(IdNotaDeEntrada, IdProduto, PrecoCustoCompra, QuantidadeCompra) " +
-            "values(@IdNotaDeEntrada, @IdProduto, @PrecoCustoCompra, @QuantidadeCompra", connection);
+            "PRODUTOSNOTASDEENTRADA(IdNotaDeEntrada, IdProduto, PrecoCustoCompra, QuantidadeComprada) " +
+            "values(@IdNotaDeEntrada, @IdProduto, @PrecoCustoCompra, @QuantidadeComprada", connection);
         connection.Open();
         foreach (var produto in produtos)
         {
             command.Parameters.Clear();
             command.Parameters.AddWithValue("@IdNotaDeEntrada", idNotaEntrada);
-            command.Parameters.AddWithValue("@IdProduto", produto.ProdutoCompra.Id);
+            command.Parameters.AddWithValue("@IdProduto", produto.ProdutoNota.Id);
             command.Parameters.AddWithValue("@PrecoCustoCompra", produto.PrecoCustoCompra);
-            command.Parameters.AddWithValue("@QuantidadeCompra", produto.QuantidadeCompra);
+            command.Parameters.AddWithValue("@QuantidadeComprada", produto.QuantidadeComprada);
             command.ExecuteNonQuery();
         }
         connection.Close();

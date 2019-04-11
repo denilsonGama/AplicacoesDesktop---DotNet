@@ -1,25 +1,18 @@
-﻿
-
-namespace ADO_NETProject01
+﻿namespace ADO_NETProject01
 {
     public class ProdutoNotaEntrada
     {
         public long? Id { get; set; }
-        public Produto ProdutoCompra { get; set; }
+        public Produto ProdutoNota { get; set; }
         public double PrecoCustoCompra { get; set; }
-        public double QuantidadeCompra { get; set; }
+        public double QuantidadeComprada { get; set; }
 
         public ProdutoNotaEntrada()
         {
-          this.Id = null;
-        }
-        
-        protected bool Equals(ProdutoNotaEntrada other)
-        {
-            return Id.Equals(other.Id);
+            this.Id = null;
         }
 
-        protected bool Equals(NotaEntrada other)
+        protected bool Equals(ProdutoNotaEntrada other)
         {
             return Id.Equals(other.Id);
         }
@@ -37,8 +30,7 @@ namespace ADO_NETProject01
 
         public override int GetHashCode()
         {
-            return ProdutoCompra.GetHashCode();
+            return ProdutoNota.GetHashCode();
         }
-
-     }
+    }
 }

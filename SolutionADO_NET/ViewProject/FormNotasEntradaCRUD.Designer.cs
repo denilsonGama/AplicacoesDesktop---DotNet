@@ -155,7 +155,7 @@
             // 
             // txtIDNotaEntrada
             // 
-            this.txtIDNotaEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtIDNotaEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtIDNotaEntrada.Enabled = false;
             this.txtIDNotaEntrada.Location = new System.Drawing.Point(97, 4);
@@ -265,7 +265,7 @@
             // 
             // cbxFornecedor
             // 
-            this.cbxFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbxFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxFornecedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxFornecedor.FormattingEnabled = true;
@@ -373,7 +373,7 @@
             // 
             // txtIDProduto
             // 
-            this.txtIDProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtIDProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtIDProduto.Enabled = false;
             this.txtIDProduto.Location = new System.Drawing.Point(98, 4);
@@ -468,7 +468,7 @@
             // 
             // cbxProduto
             // 
-            this.cbxProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbxProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxProduto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxProduto.FormattingEnabled = true;

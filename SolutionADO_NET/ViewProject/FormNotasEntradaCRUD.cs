@@ -30,6 +30,7 @@ namespace ViewProject
             foreach (Fornecedor fornecedor in this.dalFornecedor.GetAllAsIList()) {
                 cbxFornecedor.Items.Add(fornecedor);
             }
+
             foreach (Produto produto in this.dalProduto.GetAllAsIList())
             {
                 cbxProduto.Items.Add(produto);
@@ -53,9 +54,7 @@ namespace ViewProject
             dgvProdutos.ClearSelection();
             GetAllNotas();
             GetAllProdutos();
-            this.notaAtual = null;
-            
-            
+            this.notaAtual = null;            
         }
 
         private void BtnCancelarNota_Click(object sender, EventArgs e)
@@ -111,7 +110,7 @@ namespace ViewProject
                 else
                 {
                     DialogResult result = MessageBox.Show("Tem certeza que deseja Excluir esta Nota?", "Atenção!",
-                                       MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                          MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                     if (result == DialogResult.Yes)
                     {
@@ -191,8 +190,8 @@ namespace ViewProject
             this.produtoAtual = dalProdutoNotaDeEntrada.GetById(Convert.ToInt64(dgvProdutos.Rows[e.RowIndex].Cells[0].Value));
             txtIDProduto.Text = produtoAtual.Id.ToString();
             txtCusto.Text = produtoAtual.PrecoCustoCompra.ToString();
-            txtQuantidade.Text = produtoAtual.QuantidadeCompra.ToString();
-            cbxProduto.SelectedItem = produtoAtual.ProdutoCompra;
+            txtQuantidade.Text = produtoAtual.QuantidadeComprada.ToString();
+            cbxProduto.SelectedItem = produtoAtual.ProdutoNota;            
             ChangeStatusOfControlsProduto(true);
         }
 
@@ -210,22 +209,18 @@ namespace ViewProject
         {
             novoProduto();
         }
-
-        
+                
         private void novoProduto()
         {
             ClearControlsProduto();
-            if (txtIDNotaEntrada.Text == string.Empty)
-            {
+            if (txtIDNotaEntrada.Text == string.Empty){
                 MessageBox.Show("Selecione a NOTA, que terá inserção de produtos, no GRID");
             }
-            else
-            {
+            else {
                 ChangeStatusOfControlsProduto(true);
                 cbxProduto.DroppedDown = true;
             }
         }
-
 
         private void ClearControlsProduto()
         {
@@ -245,18 +240,21 @@ namespace ViewProject
                 dalProdutoNotaDeEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
                 {
                     Id = string.IsNullOrEmpty(txtIDProduto.Text) ? (long?)null : Convert.ToInt64(txtIDProduto.Text),
-                    ProdutoCompra = (Produto)cbxProduto.SelectedItem,
+                    ProdutoNota = (Produto)cbxProduto.SelectedItem,
                     PrecoCustoCompra = Convert.ToDouble(txtCusto.Text),
-                    QuantidadeCompra = Convert.ToDouble(txtQuantidade.Text)
+                    QuantidadeComprada = Convert.ToDouble(txtQuantidade.Text)
                 });
                 MessageBox.Show("Manutenção realizada com sucesso");
                 ClearControlsProduto();
             }
-            catch
-            {
+            catch {
                 MessageBox.Show("Selecione o Item que será atualizado no GRID");
             }
         }
-           
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
