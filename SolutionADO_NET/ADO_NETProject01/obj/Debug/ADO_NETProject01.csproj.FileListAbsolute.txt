@@ -12,4 +12,3 @@ E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\AD
 E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.csproj.CoreCompileInputs.cache
 E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.dll
 E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.pdb
-E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ADO_NETProject01\obj\Debug\ADO_NETProject01.csprojAssemblyReference.cache

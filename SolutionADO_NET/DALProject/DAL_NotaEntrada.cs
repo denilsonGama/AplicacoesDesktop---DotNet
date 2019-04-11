@@ -77,7 +77,7 @@ public class DAL_NotaEntrada
         var adapter = new SqlDataAdapter("select notasdeentrada.id as NR_ITEM, idfornecedor as NR_FORNECEDOR," +
                                         "fornecedores.nome as FORNECEDOR, numero as NR_NOTA, dataemissao as EMISSÃO," +
                                         "dataentrada as ENTRADA from NOTASDEENTRADA, FORNECEDORES " +
-                                        "where NOTASDEENTRADA.IDFORNECEDOR = FORNECEDORES.ID", connection);
+                                        "where NOTASDEENTRADA.IDFORNECEDOR = FORNECEDORES.ID ORDER BY NUMERO ASC", connection);
 
         var builder = new SqlCommandBuilder(adapter);
         var table = new DataTable();

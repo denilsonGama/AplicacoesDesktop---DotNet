@@ -88,7 +88,7 @@ namespace ViewProject
                 if (result == DialogResult.Yes)
                 {
                     novoProduto();
-                }
+                                    }
 
                 else this.Close();
             }
@@ -191,7 +191,7 @@ namespace ViewProject
             txtIDProduto.Text = produtoAtual.Id.ToString();
             txtCusto.Text = produtoAtual.PrecoCustoCompra.ToString();
             txtQuantidade.Text = produtoAtual.QuantidadeComprada.ToString();
-            cbxProduto.SelectedItem = produtoAtual.ProdutoNota;            
+            cbxProduto.SelectedItem = produtoAtual.ProdutoNota;
             ChangeStatusOfControlsProduto(true);
         }
 
@@ -215,6 +215,7 @@ namespace ViewProject
             ClearControlsProduto();
             if (txtIDNotaEntrada.Text == string.Empty){
                 MessageBox.Show("Selecione a NOTA, que terá inserção de produtos, no GRID");
+                GetAllNotas();
             }
             else {
                 ChangeStatusOfControlsProduto(true);
@@ -234,7 +235,6 @@ namespace ViewProject
         }
 
         private void BtnGravarProduto_Click(object sender, EventArgs e) {
-
             try
             {
                 dalProdutoNotaDeEntrada.SaveProduto(notaAtual, new ProdutoNotaEntrada()
@@ -250,11 +250,6 @@ namespace ViewProject
             catch {
                 MessageBox.Show("Selecione o Item que será atualizado no GRID");
             }
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

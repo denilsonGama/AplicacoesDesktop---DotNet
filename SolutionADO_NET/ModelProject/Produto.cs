@@ -15,6 +15,25 @@ namespace ADO_NETProject01
             this.Id = null;
         }
 
+        protected bool Equals(Produto other)
+        {
+            return Id.Equals(other.Id);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != typeof(Produto))
+                return false;
+            return Equals((Produto)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
+        }
+
         public override string ToString()
         {
             return this.Descricao;

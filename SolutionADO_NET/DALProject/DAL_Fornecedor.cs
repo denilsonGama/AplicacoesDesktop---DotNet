@@ -23,7 +23,7 @@ namespace DALProject
 
         public DataTable GetAllAsDataTable()
         {
-            var adapter = new SqlDataAdapter("select id, nome, Cnpj from FORNECEDORES", connection);
+            var adapter = new SqlDataAdapter("select id, nome, Cnpj from FORNECEDORES ORDER BY nome ASC", connection);
             var builder = new SqlCommandBuilder(adapter);
 
             var table = new DataTable();
@@ -37,7 +37,7 @@ namespace DALProject
         {
             IList<Fornecedor> fornecedores = new List<Fornecedor>();
 
-            var adapter = new SqlDataAdapter("select id, nome, Cnpj from FORNECEDORES", connection);
+            var adapter = new SqlDataAdapter("select id, nome, Cnpj from FORNECEDORES ORDER BY nome ASC", connection);
             var builder = new SqlCommandBuilder(adapter);
 
             var table = new DataTable();

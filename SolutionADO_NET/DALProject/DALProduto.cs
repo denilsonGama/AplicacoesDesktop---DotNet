@@ -55,7 +55,7 @@ namespace ADO_NETProject01
 
         public DataTable GetAllAsDataTable()
         {
-            var adapter = new SqlDataAdapter("select id, descricao, precodecusto, precodevenda, estoque from PRODUTOS", connection);
+            var adapter = new SqlDataAdapter("select id, descricao, precodecusto, precodevenda, estoque from PRODUTOSbORDER BY descricao ASC", connection);
             var builder = new SqlCommandBuilder(adapter);
 
             var table = new DataTable();

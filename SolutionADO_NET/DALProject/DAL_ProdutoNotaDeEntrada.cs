@@ -7,13 +7,13 @@ public class DAL_ProdutoNotaDeEntrada
 {
     private SqlConnection connection = DBConnection.DB_Connection;
 
-    private void InsertProduto(NotaEntrada notaEntrada, ProdutoNotaEntrada produto)
+    private void InsertProduto(NotaEntrada ProdutoNotaEntrada, ProdutoNotaEntrada produto)
     {
-        notaEntrada.Produtos.Add(produto);
+        //ProdutoNotaEntrada.Produtos.Add(produto);
         var command = new SqlCommand("insert into PRODUTOSNOTASDEENTRADA(IdNotaDeEntrada, IdProduto," +
                                     "PrecoCustoCompra, QuantidadeComprada) " +
             "values(@idnotadeentrada, @idproduto, @precocustocompra, @quantidadecomprada)", connection);
-        command.Parameters.AddWithValue("@idnotadeentrada", notaEntrada.Id);
+        command.Parameters.AddWithValue("@idnotadeentrada", ProdutoNotaEntrada.Id);
         command.Parameters.AddWithValue("@idproduto", produto.ProdutoNota.Id);
         command.Parameters.AddWithValue("@precocustocompra", produto.PrecoCustoCompra);
         command.Parameters.AddWithValue("@quantidadecomprada", produto.QuantidadeComprada);
@@ -47,7 +47,8 @@ public class DAL_ProdutoNotaDeEntrada
     {
         var adapter = new SqlDataAdapter("select PRODUTOSNOTASDEENTRADA.Id as NR_ITEM, NOTASDEENTRADA.Numero as NR_NOTA, " +
                                         "PRODUTOS.Id as COD_PRODUTO, PRODUTOS.Descricao as PRODUTO, PrecoCustoCompra as VLR_COMPRA," +
-                                        "QuantidadeComprada as QTDE_COMPRA from PRODUTOSNOTASDEENTRADA, PRODUTOS, NOTASDEENTRADA where PRODUTOSNOTASDEENTRADA.IdProduto = PRODUTOS.Id AND NOTASDEENTRADA.ID = PRODUTOSNOTASDEENTRADA.IdNotaDeEntrada ORDER BY NUMERO ASC", connection);
+                                        "QuantidadeComprada as QTDE_COMPRA from PRODUTOSNOTASDEENTRADA, PRODUTOS, " +
+                                        "NOTASDEENTRADA where PRODUTOSNOTASDEENTRADA.IdProduto = PRODUTOS.Id AND NOTASDEENTRADA.ID = PRODUTOSNOTASDEENTRADA.IdNotaDeEntrada ORDER BY NUMERO ASC", connection);
 
         var builder = new SqlCommandBuilder(adapter);
         var table = new DataTable();
