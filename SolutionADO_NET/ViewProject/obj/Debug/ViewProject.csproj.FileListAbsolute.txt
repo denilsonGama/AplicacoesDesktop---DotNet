@@ -20,3 +20,25 @@ F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\o
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CopyComplete
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.exe
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\App_Data\ADO_NETDataBase.mdf
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\App_Data\ADO_NETDataBase_log.ldf
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ViewProject.exe.config
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ViewProject.exe
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ViewProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ADO_NETProject01.dll
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\DALProject.dll
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ModelProject.dll
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ADO_NETProject01.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\DALProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ModelProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csprojAssemblyReference.cache
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormFornecedoresCRUD.resources
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormJanelaPrincipal.resources
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormNotasEntradaCRUD.resources
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.FormProdutosCRUD.resources
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.Properties.Resources.resources
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.GenerateResource.cache
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CoreCompileInputs.cache
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CopyComplete
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.exe
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.pdb

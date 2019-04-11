@@ -9,3 +9,14 @@ F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csproj.CopyComplete
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.dll
 F:\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\App_Data\ADO_NETDataBase.mdf
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\App_Data\ADO_NETDataBase_log.ldf
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\ModelProject.dll
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\ModelProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\ADO_NETProject01.dll
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\bin\Debug\ADO_NETProject01.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csprojAssemblyReference.cache
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csproj.CoreCompileInputs.cache
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.csproj.CopyComplete
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.dll
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ModelProject\obj\Debug\ModelProject.pdb
