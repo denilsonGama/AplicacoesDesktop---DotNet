@@ -7,6 +7,9 @@
 *.userosscache
 *.sln.docstates
 
+# Ignorar o diretorio do autor da apostila
+.SolucaoCapitulo06
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
