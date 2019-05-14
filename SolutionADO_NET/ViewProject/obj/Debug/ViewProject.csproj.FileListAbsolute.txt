@@ -42,3 +42,7 @@ E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\Vi
 E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.csproj.CopyComplete
 E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.exe
 E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.pdb
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ViewProject.exe.manifest
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\bin\Debug\ViewProject.application
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.exe.manifest
+E:\Hd Externo\VisualStudio\Projetos\Apostila c-e-visualStudio\SolutionADO_NET\ViewProject\obj\Debug\ViewProject.application
