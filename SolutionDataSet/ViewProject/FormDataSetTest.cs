@@ -20,7 +20,8 @@ namespace ViewProject
         }
 
         private DataSet InitializeDataSet()
-        {
+        {   
+            //Cria-se as tabelas
             DataTable dtEstados = new DataTable("Estados");
             dtEstados.Columns.Add("id");
             dtEstados.Columns.Add("uf");
@@ -31,15 +32,18 @@ namespace ViewProject
             dtCidades.Columns.Add("idestado");
             dtCidades.Columns.Add("nome");
 
+            //Cria-se o banco
             DataSet dsEstadosCidades = new DataSet("EstadosCidades");
             dsEstadosCidades.Tables.Add(dtEstados);
             dsEstadosCidades.Tables.Add(dtCidades);
-
+            
+            //Cria-se os relacionamentos
             DataRelation drCidadeEstado = new DataRelation("CidadesEstados",
                     dtEstados.Columns["id"],
                     dtCidades.Columns["idestado"]);
             dsEstadosCidades.Relations.Add(drCidadeEstado);
 
+            //Retorna um banco criado pra quem chamou initializeDataSet()
             return dsEstadosCidades;
         }
 

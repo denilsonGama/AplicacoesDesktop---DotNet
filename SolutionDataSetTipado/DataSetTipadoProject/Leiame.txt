@@ -1,0 +1,5 @@
+﻿23/05/2019: Inicio na página 277 da apostila (crie uma janela com menus);
+23/05/2019: Janela principal criada (FormPrincipal)
+23/05/2019: Criação do formulario para cadastro de cidades
+23/05/2019: Combo exibindo dados classificados via criação de query
+23/05/2019: Criação da tabela fornecedor (pagina: 290)
