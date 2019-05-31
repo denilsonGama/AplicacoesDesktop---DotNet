@@ -40,6 +40,7 @@
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.estadosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHome.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
             this.estadosToolStripMenuItem,
             this.cidadesToolStripMenuItem,
             this.fornecedoresToolStripMenuItem,
@@ -128,14 +130,21 @@
             // cadastrosToolStripMenuItem1
             // 
             this.cadastrosToolStripMenuItem1.Name = "cadastrosToolStripMenuItem1";
-            this.cadastrosToolStripMenuItem1.Size = new System.Drawing.Size(137, 26);
-            this.cadastrosToolStripMenuItem1.Text = "Cidades";
+            this.cadastrosToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.cadastrosToolStripMenuItem1.Text = "Venda";
             // 
             // estadosToolStripMenuItem1
             // 
             this.estadosToolStripMenuItem1.Name = "estadosToolStripMenuItem1";
-            this.estadosToolStripMenuItem1.Size = new System.Drawing.Size(137, 26);
+            this.estadosToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.estadosToolStripMenuItem1.Text = "Estados";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -169,5 +178,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem gruposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
     }
 }

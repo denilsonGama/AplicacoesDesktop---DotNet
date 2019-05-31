@@ -40,5 +40,10 @@ namespace DataSetTipadoProject.Forms.Menus
         {
             new FormProdutos().ShowDialog();
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormClientes().ShowDialog();
+        }
     }
 }
