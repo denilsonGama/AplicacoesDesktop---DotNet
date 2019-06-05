@@ -59,23 +59,11 @@
     <Compile Include="Forms\CRUDs\FormCidades.Designer.cs">
       <DependentUpon>FormCidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CRUDs\FormClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CRUDs\FormClientes.Designer.cs">
-      <DependentUpon>FormClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\CRUDs\FormEstados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CRUDs\FormEstados.Designer.cs">
       <DependentUpon>FormEstados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CRUDs\FormFornecedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CRUDs\FormFornecedores.Designer.cs">
-      <DependentUpon>FormFornecedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CRUDs\FormGrupos.cs">
       <SubType>Form</SubType>
@@ -100,14 +88,8 @@
     <EmbeddedResource Include="Forms\CRUDs\FormCidades.resx">
       <DependentUpon>FormCidades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CRUDs\FormClientes.resx">
-      <DependentUpon>FormClientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CRUDs\FormEstados.resx">
       <DependentUpon>FormEstados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CRUDs\FormFornecedores.resx">
-      <DependentUpon>FormFornecedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CRUDs\FormGrupos.resx">
       <DependentUpon>FormGrupos.cs</DependentUpon>

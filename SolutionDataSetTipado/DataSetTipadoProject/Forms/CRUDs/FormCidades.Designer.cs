@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label lblIdCidade;
             System.Windows.Forms.Label lblNmEstado;
             System.Windows.Forms.Label lblNmCidade;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCidades));
-            System.Windows.Forms.Label lblIdCidade;
             this.dSEstadosECidades = new DataSetTipadoProject.DataSets.DSEstadosECidades();
             this.cidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cidadesTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.CidadesTableAdapter();
@@ -51,13 +51,13 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cidadesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.cbxNmCidade = new System.Windows.Forms.ComboBox();
+            this.txtIdCidade = new System.Windows.Forms.Label();
+            this.cbxNmEstado = new System.Windows.Forms.ComboBox();
             this.estadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtNmCidade = new System.Windows.Forms.TextBox();
-            this.txtIdCidade = new System.Windows.Forms.Label();
+            lblIdCidade = new System.Windows.Forms.Label();
             lblNmEstado = new System.Windows.Forms.Label();
             lblNmCidade = new System.Windows.Forms.Label();
-            lblIdCidade = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingNavigator)).BeginInit();
@@ -65,19 +65,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.estadosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+            // lblIdCidade
+            // 
+            lblIdCidade.AutoSize = true;
+            lblIdCidade.Location = new System.Drawing.Point(201, 161);
+            lblIdCidade.Name = "lblIdCidade";
+            lblIdCidade.Size = new System.Drawing.Size(71, 17);
+            lblIdCidade.TabIndex = 1;
+            lblIdCidade.Text = "Id Cidade:";
+            // 
             // lblNmEstado
             // 
             lblNmEstado.AutoSize = true;
-            lblNmEstado.Location = new System.Drawing.Point(37, 149);
+            lblNmEstado.Location = new System.Drawing.Point(201, 190);
             lblNmEstado.Name = "lblNmEstado";
-            lblNmEstado.Size = new System.Drawing.Size(56, 17);
+            lblNmEstado.Size = new System.Drawing.Size(71, 17);
             lblNmEstado.TabIndex = 3;
-            lblNmEstado.Text = "Estado:";
+            lblNmEstado.Text = "Id Estado:";
             // 
             // lblNmCidade
             // 
             lblNmCidade.AutoSize = true;
-            lblNmCidade.Location = new System.Drawing.Point(37, 180);
+            lblNmCidade.Location = new System.Drawing.Point(201, 221);
             lblNmCidade.Name = "lblNmCidade";
             lblNmCidade.Size = new System.Drawing.Size(49, 17);
             lblNmCidade.TabIndex = 5;
@@ -101,6 +110,8 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CidadesTableAdapter = this.cidadesTableAdapter;
+            this.tableAdapterManager.ClientesTableAdapter = null;
+            this.tableAdapterManager.EnderecosTableAdapter = null;
             this.tableAdapterManager.EstadosTableAdapter = this.estadosTableAdapter;
             this.tableAdapterManager.FornecedoresTableAdapter = null;
             this.tableAdapterManager.GruposTableAdapter = null;
@@ -234,19 +245,27 @@
             this.cidadesBindingNavigatorSaveItem.Name = "cidadesBindingNavigatorSaveItem";
             this.cidadesBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.cidadesBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.cidadesBindingNavigatorSaveItem.Click += new System.EventHandler(this.cidadesBindingNavigatorSaveItem_Click);
+            this.cidadesBindingNavigatorSaveItem.Click += new System.EventHandler(this.cidadesBindingNavigatorSaveItem_Click_1);
             // 
-            // cbxNmCidade
+            // txtIdCidade
             // 
-            this.cbxNmCidade.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cidadesBindingSource, "idEstado", true));
-            this.cbxNmCidade.DataSource = this.estadosBindingSource;
-            this.cbxNmCidade.DisplayMember = "nome";
-            this.cbxNmCidade.FormattingEnabled = true;
-            this.cbxNmCidade.Location = new System.Drawing.Point(114, 146);
-            this.cbxNmCidade.Name = "cbxNmCidade";
-            this.cbxNmCidade.Size = new System.Drawing.Size(170, 24);
-            this.cbxNmCidade.TabIndex = 4;
-            this.cbxNmCidade.ValueMember = "IdEstado";
+            this.txtIdCidade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cidadesBindingSource, "IdCidade", true));
+            this.txtIdCidade.Location = new System.Drawing.Point(278, 161);
+            this.txtIdCidade.Name = "txtIdCidade";
+            this.txtIdCidade.Size = new System.Drawing.Size(307, 23);
+            this.txtIdCidade.TabIndex = 2;
+            // 
+            // cbxNmEstado
+            // 
+            this.cbxNmEstado.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cidadesBindingSource, "IdEstado", true));
+            this.cbxNmEstado.DataSource = this.estadosBindingSource;
+            this.cbxNmEstado.DisplayMember = "Nome";
+            this.cbxNmEstado.FormattingEnabled = true;
+            this.cbxNmEstado.Location = new System.Drawing.Point(278, 187);
+            this.cbxNmEstado.Name = "cbxNmEstado";
+            this.cbxNmEstado.Size = new System.Drawing.Size(151, 24);
+            this.cbxNmEstado.TabIndex = 4;
+            this.cbxNmEstado.ValueMember = "IdEstado";
             // 
             // estadosBindingSource
             // 
@@ -255,28 +274,11 @@
             // 
             // txtNmCidade
             // 
-            this.txtNmCidade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cidadesBindingSource, "nome", true));
-            this.txtNmCidade.Location = new System.Drawing.Point(114, 177);
+            this.txtNmCidade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cidadesBindingSource, "Nome", true));
+            this.txtNmCidade.Location = new System.Drawing.Point(278, 218);
             this.txtNmCidade.Name = "txtNmCidade";
-            this.txtNmCidade.Size = new System.Drawing.Size(437, 22);
+            this.txtNmCidade.Size = new System.Drawing.Size(307, 22);
             this.txtNmCidade.TabIndex = 6;
-            // 
-            // lblIdCidade
-            // 
-            lblIdCidade.AutoSize = true;
-            lblIdCidade.Location = new System.Drawing.Point(37, 120);
-            lblIdCidade.Name = "lblIdCidade";
-            lblIdCidade.Size = new System.Drawing.Size(71, 17);
-            lblIdCidade.TabIndex = 6;
-            lblIdCidade.Text = "Id Cidade:";
-            // 
-            // txtIdCidade
-            // 
-            this.txtIdCidade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cidadesBindingSource, "IdCidade", true));
-            this.txtIdCidade.Location = new System.Drawing.Point(114, 120);
-            this.txtIdCidade.Name = "txtIdCidade";
-            this.txtIdCidade.Size = new System.Drawing.Size(56, 23);
-            this.txtIdCidade.TabIndex = 7;
             // 
             // FormCidades
             // 
@@ -286,12 +288,12 @@
             this.Controls.Add(lblIdCidade);
             this.Controls.Add(this.txtIdCidade);
             this.Controls.Add(lblNmEstado);
-            this.Controls.Add(this.cbxNmCidade);
+            this.Controls.Add(this.cbxNmEstado);
             this.Controls.Add(lblNmCidade);
             this.Controls.Add(this.txtNmCidade);
             this.Controls.Add(this.cidadesBindingNavigator);
             this.Name = "FormCidades";
-            this.Text = "HomeCity - Cadastro de Cidades";
+            this.Text = "FormCidades";
             this.Load += new System.EventHandler(this.FormCidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingSource)).EndInit();
@@ -323,10 +325,10 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton cidadesBindingNavigatorSaveItem;
-        private System.Windows.Forms.ComboBox cbxNmCidade;
-        private System.Windows.Forms.TextBox txtNmCidade;
         private DataSets.DSEstadosECidadesTableAdapters.EstadosTableAdapter estadosTableAdapter;
-        private System.Windows.Forms.BindingSource estadosBindingSource;
         private System.Windows.Forms.Label txtIdCidade;
+        private System.Windows.Forms.ComboBox cbxNmEstado;
+        private System.Windows.Forms.TextBox txtNmCidade;
+        private System.Windows.Forms.BindingSource estadosBindingSource;
     }
 }

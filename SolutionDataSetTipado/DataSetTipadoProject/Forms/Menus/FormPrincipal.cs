@@ -28,7 +28,7 @@ namespace DataSetTipadoProject.Forms.Menus
 
         private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FormFornecedores().ShowDialog();
+            //new FormFornecedores().ShowDialog();
         }
 
         private void gruposToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace DataSetTipadoProject.Forms.Menus
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FormClientes().ShowDialog();
+            //new FormClientes().ShowDialog();
         }
     }
 }

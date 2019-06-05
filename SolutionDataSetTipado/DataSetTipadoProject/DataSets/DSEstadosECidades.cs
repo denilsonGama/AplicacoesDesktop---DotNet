@@ -8,3 +8,10 @@
 }
 
 
+
+namespace DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters {
+    
+    
+    public partial class CidadesTableAdapter {
+    }
+}

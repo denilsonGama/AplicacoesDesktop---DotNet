@@ -25,12 +25,20 @@ namespace DataSetTipadoProject.Forms.CRUDs
 
         }
 
+        private void cidadesBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.cidadesBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dSEstadosECidades);
+
+        }
+
         private void FormCidades_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'dSEstadosECidades.Estados'. Você pode movê-la ou removê-la conforme necessário.
-            this.estadosTableAdapter.FillByNome(this.dSEstadosECidades.Estados);
+            this.estadosTableAdapter.FillByNome (this.dSEstadosECidades.Estados);
             // TODO: esta linha de código carrega dados na tabela 'dSEstadosECidades.Cidades'. Você pode movê-la ou removê-la conforme necessário.
-            this.cidadesTableAdapter.Fill(this.dSEstadosECidades.Cidades);
+            this.cidadesTableAdapter.FillByNomeUF(this.dSEstadosECidades.Cidades);
 
         }
     }
