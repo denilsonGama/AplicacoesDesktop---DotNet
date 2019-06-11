@@ -45,5 +45,21 @@ namespace DataSetTipadoProject.Forms.Menus
         {
             //new FormClientes().ShowDialog();
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            DialogResult close = new DialogResult();
+            close = MessageBox.Show("Deseja sair do sistema?", "DataSetTipado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (close == DialogResult.Yes)
+                
+            {
+                e.Cancel = false;
+                MessageBox.Show("Obrigado por utilizar nossos serviços", "DataSetTipado" , MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else if (close == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

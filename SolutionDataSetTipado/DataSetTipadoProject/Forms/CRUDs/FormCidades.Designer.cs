@@ -55,6 +55,10 @@
             this.cbxNmEstado = new System.Windows.Forms.ComboBox();
             this.estadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtNmCidade = new System.Windows.Forms.TextBox();
+            this.cidadesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             lblIdCidade = new System.Windows.Forms.Label();
             lblNmEstado = new System.Windows.Forms.Label();
             lblNmCidade = new System.Windows.Forms.Label();
@@ -63,12 +67,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingNavigator)).BeginInit();
             this.cidadesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.estadosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lblIdCidade
             // 
             lblIdCidade.AutoSize = true;
-            lblIdCidade.Location = new System.Drawing.Point(201, 161);
+            lblIdCidade.Location = new System.Drawing.Point(35, 69);
             lblIdCidade.Name = "lblIdCidade";
             lblIdCidade.Size = new System.Drawing.Size(71, 17);
             lblIdCidade.TabIndex = 1;
@@ -77,7 +82,7 @@
             // lblNmEstado
             // 
             lblNmEstado.AutoSize = true;
-            lblNmEstado.Location = new System.Drawing.Point(201, 190);
+            lblNmEstado.Location = new System.Drawing.Point(35, 98);
             lblNmEstado.Name = "lblNmEstado";
             lblNmEstado.Size = new System.Drawing.Size(71, 17);
             lblNmEstado.TabIndex = 3;
@@ -86,7 +91,7 @@
             // lblNmCidade
             // 
             lblNmCidade.AutoSize = true;
-            lblNmCidade.Location = new System.Drawing.Point(201, 221);
+            lblNmCidade.Location = new System.Drawing.Point(35, 129);
             lblNmCidade.Name = "lblNmCidade";
             lblNmCidade.Size = new System.Drawing.Size(49, 17);
             lblNmCidade.TabIndex = 5;
@@ -245,12 +250,12 @@
             this.cidadesBindingNavigatorSaveItem.Name = "cidadesBindingNavigatorSaveItem";
             this.cidadesBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.cidadesBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.cidadesBindingNavigatorSaveItem.Click += new System.EventHandler(this.cidadesBindingNavigatorSaveItem_Click_1);
+            this.cidadesBindingNavigatorSaveItem.Click += new System.EventHandler(this.cidadesBindingNavigatorSaveItem_Click);
             // 
             // txtIdCidade
             // 
             this.txtIdCidade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cidadesBindingSource, "IdCidade", true));
-            this.txtIdCidade.Location = new System.Drawing.Point(278, 161);
+            this.txtIdCidade.Location = new System.Drawing.Point(112, 69);
             this.txtIdCidade.Name = "txtIdCidade";
             this.txtIdCidade.Size = new System.Drawing.Size(307, 23);
             this.txtIdCidade.TabIndex = 2;
@@ -261,7 +266,7 @@
             this.cbxNmEstado.DataSource = this.estadosBindingSource;
             this.cbxNmEstado.DisplayMember = "Nome";
             this.cbxNmEstado.FormattingEnabled = true;
-            this.cbxNmEstado.Location = new System.Drawing.Point(278, 187);
+            this.cbxNmEstado.Location = new System.Drawing.Point(112, 95);
             this.cbxNmEstado.Name = "cbxNmEstado";
             this.cbxNmEstado.Size = new System.Drawing.Size(151, 24);
             this.cbxNmEstado.TabIndex = 4;
@@ -275,16 +280,55 @@
             // txtNmCidade
             // 
             this.txtNmCidade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cidadesBindingSource, "Nome", true));
-            this.txtNmCidade.Location = new System.Drawing.Point(278, 218);
+            this.txtNmCidade.Location = new System.Drawing.Point(112, 126);
             this.txtNmCidade.Name = "txtNmCidade";
             this.txtNmCidade.Size = new System.Drawing.Size(307, 22);
             this.txtNmCidade.TabIndex = 6;
+            // 
+            // cidadesDataGridView
+            // 
+            this.cidadesDataGridView.AllowUserToOrderColumns = true;
+            this.cidadesDataGridView.AutoGenerateColumns = false;
+            this.cidadesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.cidadesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cidadesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.cidadesDataGridView.DataSource = this.cidadesBindingSource;
+            this.cidadesDataGridView.Location = new System.Drawing.Point(32, 191);
+            this.cidadesDataGridView.Name = "cidadesDataGridView";
+            this.cidadesDataGridView.RowTemplate.Height = 24;
+            this.cidadesDataGridView.Size = new System.Drawing.Size(387, 313);
+            this.cidadesDataGridView.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCidade";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdCidade";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "IdEstado";
+            this.dataGridViewTextBoxColumn2.HeaderText = "IdEstado";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // FormCidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 527);
+            this.Controls.Add(this.cidadesDataGridView);
             this.Controls.Add(lblIdCidade);
             this.Controls.Add(this.txtIdCidade);
             this.Controls.Add(lblNmEstado);
@@ -301,6 +345,7 @@
             this.cidadesBindingNavigator.ResumeLayout(false);
             this.cidadesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.estadosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +375,9 @@
         private System.Windows.Forms.ComboBox cbxNmEstado;
         private System.Windows.Forms.TextBox txtNmCidade;
         private System.Windows.Forms.BindingSource estadosBindingSource;
+        private System.Windows.Forms.DataGridView cidadesDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

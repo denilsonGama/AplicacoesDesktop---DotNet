@@ -20,18 +20,18 @@ namespace DataSetTipadoProject.Forms.CRUDs
         private void cidadesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.cidadesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dSEstadosECidades);
-
-        }
-
-        private void cidadesBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.cidadesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dSEstadosECidades);
-
-        }
+            
+            if (MessageBox.Show("Deseja salvar as alterações?", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+            {
+                this.cidadesBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.dSEstadosECidades);
+                MessageBox.Show("Alterações registradas com sucesso", "DataSetTipado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                this.Close();
+            }
+         }
 
         private void FormCidades_Load(object sender, EventArgs e)
         {
