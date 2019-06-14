@@ -4,6 +4,8 @@
 23/05/2019: Combo exibindo dados classificados via criação de query
 23/05/2019: Criação da tabela fornecedor (pagina: 290)
 30/05/2019: Criação dos Formularios Grupos e Produtos
+14/06/2019: Criação do formulário de clientes com cadastro de endereço
+14/06/2019: Criação do formulario de cadastro de nota de compra
 
 
 Criar:
