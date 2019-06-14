@@ -299,7 +299,7 @@
             this.notasDeEntradaBindingNavigatorSaveItem.Name = "notasDeEntradaBindingNavigatorSaveItem";
             this.notasDeEntradaBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.notasDeEntradaBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.notasDeEntradaBindingNavigatorSaveItem.Click += new System.EventHandler(this.notasDeEntradaBindingNavigatorSaveItem_Click_1);
+            this.notasDeEntradaBindingNavigatorSaveItem.Click += new System.EventHandler(this.notasDeEntradaBindingNavigatorSaveItem_Click);
             // 
             // txtIdNotaDeEntrada
             // 

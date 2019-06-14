@@ -17,15 +17,8 @@ namespace DataSetTipadoProject.Forms.CRUDs
             InitializeComponent();
         }
 
+
         private void notasDeEntradaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.notasDeEntradaBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dSEstadosECidades);
-
-        }
-
-        private void notasDeEntradaBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -53,6 +46,8 @@ namespace DataSetTipadoProject.Forms.CRUDs
             ((DataGridViewComboBoxColumn)dgvProdutos.Columns[0]).DataSource = this.dSEstadosECidades.Produtos;
             ((DataGridViewComboBoxColumn)dgvProdutos.Columns[0]).DisplayMember = this.dSEstadosECidades.Produtos.DescricaoColumn.ColumnName;
             ((DataGridViewComboBoxColumn)dgvProdutos.Columns[0]).ValueMember = this.dSEstadosECidades.Produtos.IdProdutoColumn.ColumnName;
+
+
         }
     }
 }

@@ -31,10 +31,7 @@ namespace DataSetTipadoProject.Forms.Menus
             new FormFornecedores().ShowDialog();
         }
 
-        private void gruposToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new FormGrupos().ShowDialog();
-        }
+        
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -65,6 +62,16 @@ namespace DataSetTipadoProject.Forms.Menus
         private void estadosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new FormNotaDeEntrada().ShowDialog();
+        }
+
+        private void endereçosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormTpEndereco().ShowDialog();
+        }
+
+        private void produtosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new FormGrupos().ShowDialog();
         }
     }
 }

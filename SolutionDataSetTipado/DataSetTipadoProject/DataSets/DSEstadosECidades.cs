@@ -1,17 +1,21 @@
 ﻿namespace DataSetTipadoProject.DataSets
 {
+}
+
+namespace DataSetTipadoProject.DataSets
+{
+}
+namespace DataSetTipadoProject.DataSets
+{
 
 
-    partial class DSEstadosECidades
+    public partial class DSEstadosECidades
     {
     }
 }
-
-
-
-namespace DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters {
+namespace DataSetTipadoProject.DataSets {
     
     
-    public partial class CidadesTableAdapter {
+    public partial class DSEstadosECidades {
     }
 }

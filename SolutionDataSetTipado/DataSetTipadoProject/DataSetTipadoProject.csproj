@@ -95,6 +95,12 @@
     <Compile Include="Forms\CRUDs\FormProdutos.Designer.cs">
       <DependentUpon>FormProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CRUDs\FormTpEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CRUDs\FormTpEndereco.Designer.cs">
+      <DependentUpon>FormTpEndereco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menus\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CRUDs\FormProdutos.resx">
       <DependentUpon>FormProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CRUDs\FormTpEndereco.resx">
+      <DependentUpon>FormTpEndereco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menus\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
