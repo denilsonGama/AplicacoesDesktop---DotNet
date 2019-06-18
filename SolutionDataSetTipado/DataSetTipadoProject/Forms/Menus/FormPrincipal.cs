@@ -73,5 +73,10 @@ namespace DataSetTipadoProject.Forms.Menus
         {
             new FormGrupos().ShowDialog();
         }
+
+        private void cadastrosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new FormNotaDeSaida().ShowDialog();
+        }
     }
 }

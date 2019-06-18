@@ -33,6 +33,8 @@
             System.Windows.Forms.Label lblCPF;
             System.Windows.Forms.Label lblNmCliente;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientes));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.clientesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,11 +50,14 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.clientesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.clientesBindingNavigatorSaveEndereco = new System.Windows.Forms.ToolStripButton();
+            this.clientesBindingNavigatorVisualizarEndereco = new System.Windows.Forms.ToolStripButton();
             this.txtIdCliente = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.txtNmCliente = new System.Windows.Forms.TextBox();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
+            this.enderecosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
@@ -65,7 +70,12 @@
             this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.gpxEndereco = new System.Windows.Forms.GroupBox();
             this.dgvEndereco = new System.Windows.Forms.DataGridView();
-            this.enderecosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.IdCidade = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.NmEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NrEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdTpEndereco = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,14 +85,6 @@
             this.enderecosTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.EnderecosTableAdapter();
             this.tp_EnderecoTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.Tp_EnderecoTableAdapter();
             this.cidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.IdCidade = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.NmEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NrEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdTpEndereco = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.clientesBindingNavigatorSaveEndereco = new System.Windows.Forms.ToolStripButton();
-            this.clientesBindingNavigatorVisualizarEndereco = new System.Windows.Forms.ToolStripButton();
             lblIdCliente = new System.Windows.Forms.Label();
             lblCPF = new System.Windows.Forms.Label();
             lblNmCliente = new System.Windows.Forms.Label();
@@ -92,9 +94,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecosBindingSource)).BeginInit();
             this.gpxEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEndereco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -265,6 +267,25 @@
             this.clientesBindingNavigatorSaveItem.Text = "Salvar Dados Cliente";
             this.clientesBindingNavigatorSaveItem.Click += new System.EventHandler(this.clientesBindingNavigatorSaveItem_Click);
             // 
+            // clientesBindingNavigatorSaveEndereco
+            // 
+            this.clientesBindingNavigatorSaveEndereco.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.clientesBindingNavigatorSaveEndereco.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorSaveEndereco.Image")));
+            this.clientesBindingNavigatorSaveEndereco.Name = "clientesBindingNavigatorSaveEndereco";
+            this.clientesBindingNavigatorSaveEndereco.Size = new System.Drawing.Size(24, 24);
+            this.clientesBindingNavigatorSaveEndereco.Text = "Salvar Dados Endereco";
+            this.clientesBindingNavigatorSaveEndereco.Click += new System.EventHandler(this.clientesBindingNavigatorSaveEndereco_Click);
+            // 
+            // clientesBindingNavigatorVisualizarEndereco
+            // 
+            this.clientesBindingNavigatorVisualizarEndereco.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.clientesBindingNavigatorVisualizarEndereco.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorVisualizarEndereco.Image")));
+            this.clientesBindingNavigatorVisualizarEndereco.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.clientesBindingNavigatorVisualizarEndereco.Name = "clientesBindingNavigatorVisualizarEndereco";
+            this.clientesBindingNavigatorVisualizarEndereco.Size = new System.Drawing.Size(24, 24);
+            this.clientesBindingNavigatorVisualizarEndereco.Text = "Visualizar Endereço";
+            this.clientesBindingNavigatorVisualizarEndereco.Click += new System.EventHandler(this.clientesBindingNavigatorVisualizarEndereco_Click);
+            // 
             // txtIdCliente
             // 
             this.txtIdCliente.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "IdCliente", true));
@@ -332,6 +353,11 @@
             this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem1.Text = "Adicionar novo";
+            // 
+            // enderecosBindingSource
+            // 
+            this.enderecosBindingSource.DataMember = "FK_Enderecos_Clientes";
+            this.enderecosBindingSource.DataSource = this.clientesBindingSource;
             // 
             // bindingNavigatorCountItem1
             // 
@@ -424,6 +450,14 @@
             // dgvEndereco
             // 
             this.dgvEndereco.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEndereco.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdCidade,
@@ -433,16 +467,68 @@
             this.Complemento,
             this.IdTpEndereco});
             this.dgvEndereco.DataSource = this.enderecosBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEndereco.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvEndereco.Location = new System.Drawing.Point(6, 64);
             this.dgvEndereco.Name = "dgvEndereco";
             this.dgvEndereco.RowTemplate.Height = 24;
             this.dgvEndereco.Size = new System.Drawing.Size(1172, 220);
             this.dgvEndereco.TabIndex = 1;
             // 
-            // enderecosBindingSource
+            // IdCidade
             // 
-            this.enderecosBindingSource.DataMember = "FK_Enderecos_Clientes";
-            this.enderecosBindingSource.DataSource = this.clientesBindingSource;
+            this.IdCidade.DataPropertyName = "IdCidade";
+            this.IdCidade.FillWeight = 456.8528F;
+            this.IdCidade.HeaderText = "Cidade";
+            this.IdCidade.Name = "IdCidade";
+            this.IdCidade.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.IdCidade.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.IdCidade.Width = 150;
+            // 
+            // NmEndereco
+            // 
+            this.NmEndereco.DataPropertyName = "NmEndereco";
+            this.NmEndereco.FillWeight = 50.27696F;
+            this.NmEndereco.HeaderText = "Endereco";
+            this.NmEndereco.Name = "NmEndereco";
+            this.NmEndereco.Width = 200;
+            // 
+            // NrEndereco
+            // 
+            this.NrEndereco.DataPropertyName = "NrEndereco";
+            this.NrEndereco.FillWeight = 13.62758F;
+            this.NrEndereco.HeaderText = "Numero";
+            this.NrEndereco.Name = "NrEndereco";
+            this.NrEndereco.Width = 80;
+            // 
+            // CEP
+            // 
+            this.CEP.DataPropertyName = "Cep";
+            this.CEP.FillWeight = 32.01956F;
+            this.CEP.HeaderText = "Cep";
+            this.CEP.Name = "CEP";
+            // 
+            // Complemento
+            // 
+            this.Complemento.DataPropertyName = "Complemento";
+            this.Complemento.FillWeight = 32.78146F;
+            this.Complemento.HeaderText = "Complemento";
+            this.Complemento.Name = "Complemento";
+            this.Complemento.Width = 150;
+            // 
+            // IdTpEndereco
+            // 
+            this.IdTpEndereco.DataPropertyName = "IdTpEndereco";
+            this.IdTpEndereco.FillWeight = 14.44164F;
+            this.IdTpEndereco.HeaderText = "Tipo:";
+            this.IdTpEndereco.Name = "IdTpEndereco";
+            this.IdTpEndereco.Width = 150;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -502,74 +588,6 @@
             this.cidadesBindingSource.DataMember = "Cidades";
             this.cidadesBindingSource.DataSource = this.dSEstadosECidades;
             // 
-            // IdCidade
-            // 
-            this.IdCidade.DataPropertyName = "IdCidade";
-            this.IdCidade.FillWeight = 456.8528F;
-            this.IdCidade.HeaderText = "Cidade";
-            this.IdCidade.Name = "IdCidade";
-            this.IdCidade.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.IdCidade.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.IdCidade.Width = 150;
-            // 
-            // NmEndereco
-            // 
-            this.NmEndereco.DataPropertyName = "NmEndereco";
-            this.NmEndereco.FillWeight = 50.27696F;
-            this.NmEndereco.HeaderText = "Endereco";
-            this.NmEndereco.Name = "NmEndereco";
-            this.NmEndereco.Width = 200;
-            // 
-            // NrEndereco
-            // 
-            this.NrEndereco.DataPropertyName = "NrEndereco";
-            this.NrEndereco.FillWeight = 13.62758F;
-            this.NrEndereco.HeaderText = "Numero";
-            this.NrEndereco.Name = "NrEndereco";
-            this.NrEndereco.Width = 80;
-            // 
-            // CEP
-            // 
-            this.CEP.DataPropertyName = "Cep";
-            this.CEP.FillWeight = 32.01956F;
-            this.CEP.HeaderText = "Cep";
-            this.CEP.Name = "CEP";
-            // 
-            // Complemento
-            // 
-            this.Complemento.DataPropertyName = "Complemento";
-            this.Complemento.FillWeight = 32.78146F;
-            this.Complemento.HeaderText = "Complemento";
-            this.Complemento.Name = "Complemento";
-            this.Complemento.Width = 150;
-            // 
-            // IdTpEndereco
-            // 
-            this.IdTpEndereco.DataPropertyName = "IdTpEndereco";
-            this.IdTpEndereco.FillWeight = 14.44164F;
-            this.IdTpEndereco.HeaderText = "Tipo:";
-            this.IdTpEndereco.Name = "IdTpEndereco";
-            this.IdTpEndereco.Width = 150;
-            // 
-            // clientesBindingNavigatorSaveEndereco
-            // 
-            this.clientesBindingNavigatorSaveEndereco.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.clientesBindingNavigatorSaveEndereco.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorSaveEndereco.Image")));
-            this.clientesBindingNavigatorSaveEndereco.Name = "clientesBindingNavigatorSaveEndereco";
-            this.clientesBindingNavigatorSaveEndereco.Size = new System.Drawing.Size(24, 24);
-            this.clientesBindingNavigatorSaveEndereco.Text = "Salvar Dados Endereco";
-            this.clientesBindingNavigatorSaveEndereco.Click += new System.EventHandler(this.clientesBindingNavigatorSaveEndereco_Click);
-            // 
-            // clientesBindingNavigatorVisualizarEndereco
-            // 
-            this.clientesBindingNavigatorVisualizarEndereco.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.clientesBindingNavigatorVisualizarEndereco.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorVisualizarEndereco.Image")));
-            this.clientesBindingNavigatorVisualizarEndereco.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.clientesBindingNavigatorVisualizarEndereco.Name = "clientesBindingNavigatorVisualizarEndereco";
-            this.clientesBindingNavigatorVisualizarEndereco.Size = new System.Drawing.Size(24, 24);
-            this.clientesBindingNavigatorVisualizarEndereco.Text = "Visualizar Endereço";
-            this.clientesBindingNavigatorVisualizarEndereco.Click += new System.EventHandler(this.clientesBindingNavigatorVisualizarEndereco_Click);
-            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -595,10 +613,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecosBindingSource)).EndInit();
             this.gpxEndereco.ResumeLayout(false);
             this.gpxEndereco.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEndereco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

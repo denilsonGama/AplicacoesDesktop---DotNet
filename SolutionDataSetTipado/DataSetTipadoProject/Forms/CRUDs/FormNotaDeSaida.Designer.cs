@@ -1,6 +1,6 @@
 ﻿namespace DataSetTipadoProject.Forms.CRUDs
 {
-    partial class FormNotaDeEntrada
+    partial class FormNotaDeSaida
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label lblIdNotaDeEntrada;
-            System.Windows.Forms.Label lblIdFornecedor;
-            System.Windows.Forms.Label nrNotaLabel;
-            System.Windows.Forms.Label dtEmissaoLabel;
-            System.Windows.Forms.Label dtEntradaLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNotaDeEntrada));
+            System.Windows.Forms.Label idNotaDeVendaLabel;
+            System.Windows.Forms.Label idClienteLabel;
+            System.Windows.Forms.Label numeroDaNotaLabel;
+            System.Windows.Forms.Label dataDaVendaLabel;
+            System.Windows.Forms.Label notaFechadaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNotaDeSaida));
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.idNotaDeVendaLabel1 = new System.Windows.Forms.Label();
+            this.notasDeVendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSEstadosECidades = new DataSetTipadoProject.DataSets.DSEstadosECidades();
-            this.notasDeEntradaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.notasDeEntradaTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.NotasDeEntradaTableAdapter();
+            this.idClienteComboBox = new System.Windows.Forms.ComboBox();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.numeroDaNotaTextBox = new System.Windows.Forms.TextBox();
+            this.dataDaVendaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.notaFechadaLabel1 = new System.Windows.Forms.Label();
+            this.notasDeVendaTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.NotasDeVendaTableAdapter();
             this.tableAdapterManager = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager();
-            this.produtosNotaDeEntradaTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.ProdutosNotaDeEntradaTableAdapter();
-            this.notasDeEntradaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.clientesTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.ClientesTableAdapter();
+            this.produtosNotaDeSaidaTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.ProdutosNotaDeSaidaTableAdapter();
+            this.produtosTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.ProdutosTableAdapter();
+            this.notasDeVendaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -52,20 +61,9 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.notasDeEntradaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.txtIdNotaDeEntrada = new System.Windows.Forms.Label();
-            this.cbxFornecedor = new System.Windows.Forms.ComboBox();
-            this.fornecedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtNrNota = new System.Windows.Forms.TextBox();
-            this.dtEmissaoDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.dtEntradaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.fornecedoresTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.FornecedoresTableAdapter();
-            this.gpxDetalhesNotaEntrada = new System.Windows.Forms.GroupBox();
-            this.dgvProdutos = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtosNotaDeEntradaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.notasDeVendaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.produtosNotaDeSaidaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
@@ -78,119 +76,200 @@
             this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.produtosNotaDeEntradaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produtosNotaDeEntradaTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.ProdutosNotaDeEntradaTableAdapter();
+            this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtosTableAdapter = new DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.ProdutosTableAdapter();
-            lblIdNotaDeEntrada = new System.Windows.Forms.Label();
-            lblIdFornecedor = new System.Windows.Forms.Label();
-            nrNotaLabel = new System.Windows.Forms.Label();
-            dtEmissaoLabel = new System.Windows.Forms.Label();
-            dtEntradaLabel = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            idNotaDeVendaLabel = new System.Windows.Forms.Label();
+            idClienteLabel = new System.Windows.Forms.Label();
+            numeroDaNotaLabel = new System.Windows.Forms.Label();
+            dataDaVendaLabel = new System.Windows.Forms.Label();
+            notaFechadaLabel = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notasDeEntradaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notasDeEntradaBindingNavigator)).BeginInit();
-            this.notasDeEntradaBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
-            this.gpxDetalhesNotaEntrada.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeEntradaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingNavigator)).BeginInit();
+            this.notasDeVendaBindingNavigator.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeSaidaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeEntradaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblIdNotaDeEntrada
+            // idNotaDeVendaLabel
             // 
-            lblIdNotaDeEntrada.AutoSize = true;
-            lblIdNotaDeEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblIdNotaDeEntrada.Location = new System.Drawing.Point(27, 54);
-            lblIdNotaDeEntrada.Name = "lblIdNotaDeEntrada";
-            lblIdNotaDeEntrada.Size = new System.Drawing.Size(76, 18);
-            lblIdNotaDeEntrada.TabIndex = 1;
-            lblIdNotaDeEntrada.Text = "Cód Nota:";
+            idNotaDeVendaLabel.AutoSize = true;
+            idNotaDeVendaLabel.Location = new System.Drawing.Point(54, 39);
+            idNotaDeVendaLabel.Name = "idNotaDeVendaLabel";
+            idNotaDeVendaLabel.Size = new System.Drawing.Size(124, 17);
+            idNotaDeVendaLabel.TabIndex = 0;
+            idNotaDeVendaLabel.Text = "Id Nota De Venda:";
             // 
-            // lblIdFornecedor
+            // idClienteLabel
             // 
-            lblIdFornecedor.AutoSize = true;
-            lblIdFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblIdFornecedor.Location = new System.Drawing.Point(27, 97);
-            lblIdFornecedor.Name = "lblIdFornecedor";
-            lblIdFornecedor.Size = new System.Drawing.Size(89, 18);
-            lblIdFornecedor.TabIndex = 3;
-            lblIdFornecedor.Text = "Fornecedor:";
+            idClienteLabel.AutoSize = true;
+            idClienteLabel.Location = new System.Drawing.Point(54, 68);
+            idClienteLabel.Name = "idClienteLabel";
+            idClienteLabel.Size = new System.Drawing.Size(70, 17);
+            idClienteLabel.TabIndex = 2;
+            idClienteLabel.Text = "Id Cliente:";
             // 
-            // nrNotaLabel
+            // numeroDaNotaLabel
             // 
-            nrNotaLabel.AutoSize = true;
-            nrNotaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nrNotaLabel.Location = new System.Drawing.Point(390, 57);
-            nrNotaLabel.Name = "nrNotaLabel";
-            nrNotaLabel.Size = new System.Drawing.Size(64, 18);
-            nrNotaLabel.TabIndex = 5;
-            nrNotaLabel.Text = "Nr Nota:";
+            numeroDaNotaLabel.AutoSize = true;
+            numeroDaNotaLabel.Location = new System.Drawing.Point(54, 99);
+            numeroDaNotaLabel.Name = "numeroDaNotaLabel";
+            numeroDaNotaLabel.Size = new System.Drawing.Size(118, 17);
+            numeroDaNotaLabel.TabIndex = 4;
+            numeroDaNotaLabel.Text = "Numero Da Nota:";
             // 
-            // dtEmissaoLabel
+            // dataDaVendaLabel
             // 
-            dtEmissaoLabel.AutoSize = true;
-            dtEmissaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dtEmissaoLabel.Location = new System.Drawing.Point(27, 139);
-            dtEmissaoLabel.Name = "dtEmissaoLabel";
-            dtEmissaoLabel.Size = new System.Drawing.Size(126, 18);
-            dtEmissaoLabel.TabIndex = 7;
-            dtEmissaoLabel.Text = "Data de Emissao:";
+            dataDaVendaLabel.AutoSize = true;
+            dataDaVendaLabel.Location = new System.Drawing.Point(54, 128);
+            dataDaVendaLabel.Name = "dataDaVendaLabel";
+            dataDaVendaLabel.Size = new System.Drawing.Size(109, 17);
+            dataDaVendaLabel.TabIndex = 6;
+            dataDaVendaLabel.Text = "Data Da Venda:";
             // 
-            // dtEntradaLabel
+            // notaFechadaLabel
             // 
-            dtEntradaLabel.AutoSize = true;
-            dtEntradaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dtEntradaLabel.Location = new System.Drawing.Point(335, 134);
-            dtEntradaLabel.Name = "dtEntradaLabel";
-            dtEntradaLabel.Size = new System.Drawing.Size(118, 18);
-            dtEntradaLabel.TabIndex = 9;
-            dtEntradaLabel.Text = "Data de Entrada:";
+            notaFechadaLabel.AutoSize = true;
+            notaFechadaLabel.Location = new System.Drawing.Point(54, 149);
+            notaFechadaLabel.Name = "notaFechadaLabel";
+            notaFechadaLabel.Size = new System.Drawing.Size(101, 17);
+            notaFechadaLabel.TabIndex = 8;
+            notaFechadaLabel.Text = "Nota Fechada:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(idNotaDeVendaLabel);
+            this.groupBox1.Controls.Add(this.idNotaDeVendaLabel1);
+            this.groupBox1.Controls.Add(idClienteLabel);
+            this.groupBox1.Controls.Add(this.idClienteComboBox);
+            this.groupBox1.Controls.Add(numeroDaNotaLabel);
+            this.groupBox1.Controls.Add(this.numeroDaNotaTextBox);
+            this.groupBox1.Controls.Add(dataDaVendaLabel);
+            this.groupBox1.Controls.Add(this.dataDaVendaDateTimePicker);
+            this.groupBox1.Controls.Add(notaFechadaLabel);
+            this.groupBox1.Controls.Add(this.notaFechadaLabel1);
+            this.groupBox1.Location = new System.Drawing.Point(31, 34);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(722, 188);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dados da Nota";
+            // 
+            // idNotaDeVendaLabel1
+            // 
+            this.idNotaDeVendaLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notasDeVendaBindingSource, "IdNotaDeVenda", true));
+            this.idNotaDeVendaLabel1.Location = new System.Drawing.Point(184, 39);
+            this.idNotaDeVendaLabel1.Name = "idNotaDeVendaLabel1";
+            this.idNotaDeVendaLabel1.Size = new System.Drawing.Size(480, 23);
+            this.idNotaDeVendaLabel1.TabIndex = 1;
+            this.idNotaDeVendaLabel1.Text = "label1";
+            // 
+            // notasDeVendaBindingSource
+            // 
+            this.notasDeVendaBindingSource.DataMember = "NotasDeVenda";
+            this.notasDeVendaBindingSource.DataSource = this.dSEstadosECidades;
             // 
             // dSEstadosECidades
             // 
             this.dSEstadosECidades.DataSetName = "DSEstadosECidades";
             this.dSEstadosECidades.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // notasDeEntradaBindingSource
+            // idClienteComboBox
             // 
-            this.notasDeEntradaBindingSource.DataMember = "NotasDeEntrada";
-            this.notasDeEntradaBindingSource.DataSource = this.dSEstadosECidades;
+            this.idClienteComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.notasDeVendaBindingSource, "IdCliente", true));
+            this.idClienteComboBox.DataSource = this.clientesBindingSource;
+            this.idClienteComboBox.DisplayMember = "Nome";
+            this.idClienteComboBox.FormattingEnabled = true;
+            this.idClienteComboBox.Location = new System.Drawing.Point(184, 65);
+            this.idClienteComboBox.Name = "idClienteComboBox";
+            this.idClienteComboBox.Size = new System.Drawing.Size(480, 24);
+            this.idClienteComboBox.TabIndex = 3;
+            this.idClienteComboBox.ValueMember = "IdCliente";
             // 
-            // notasDeEntradaTableAdapter
+            // clientesBindingSource
             // 
-            this.notasDeEntradaTableAdapter.ClearBeforeFill = true;
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.dSEstadosECidades;
+            // 
+            // numeroDaNotaTextBox
+            // 
+            this.numeroDaNotaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notasDeVendaBindingSource, "NumeroDaNota", true));
+            this.numeroDaNotaTextBox.Location = new System.Drawing.Point(184, 96);
+            this.numeroDaNotaTextBox.Name = "numeroDaNotaTextBox";
+            this.numeroDaNotaTextBox.Size = new System.Drawing.Size(121, 22);
+            this.numeroDaNotaTextBox.TabIndex = 5;
+            // 
+            // dataDaVendaDateTimePicker
+            // 
+            this.dataDaVendaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.notasDeVendaBindingSource, "DataDaVenda", true));
+            this.dataDaVendaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dataDaVendaDateTimePicker.Location = new System.Drawing.Point(184, 124);
+            this.dataDaVendaDateTimePicker.Name = "dataDaVendaDateTimePicker";
+            this.dataDaVendaDateTimePicker.Size = new System.Drawing.Size(121, 22);
+            this.dataDaVendaDateTimePicker.TabIndex = 7;
+            // 
+            // notaFechadaLabel1
+            // 
+            this.notaFechadaLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notasDeVendaBindingSource, "NotaFechada", true));
+            this.notaFechadaLabel1.Location = new System.Drawing.Point(184, 149);
+            this.notaFechadaLabel1.Name = "notaFechadaLabel1";
+            this.notaFechadaLabel1.Size = new System.Drawing.Size(480, 23);
+            this.notaFechadaLabel1.TabIndex = 9;
+            this.notaFechadaLabel1.Text = "label1";
+            // 
+            // notasDeVendaTableAdapter
+            // 
+            this.notasDeVendaTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CidadesTableAdapter = null;
-            this.tableAdapterManager.ClientesTableAdapter = null;
+            this.tableAdapterManager.ClientesTableAdapter = this.clientesTableAdapter;
             this.tableAdapterManager.EnderecosTableAdapter = null;
             this.tableAdapterManager.EstadosTableAdapter = null;
             this.tableAdapterManager.FornecedoresTableAdapter = null;
             this.tableAdapterManager.GruposTableAdapter = null;
-            this.tableAdapterManager.NotasDeEntradaTableAdapter = this.notasDeEntradaTableAdapter;
-            this.tableAdapterManager.NotasDeVendaTableAdapter = null;
-            this.tableAdapterManager.ProdutosNotaDeEntradaTableAdapter = this.produtosNotaDeEntradaTableAdapter;
-            this.tableAdapterManager.ProdutosNotaDeSaidaTableAdapter = null;
-            this.tableAdapterManager.ProdutosTableAdapter = null;
+            this.tableAdapterManager.NotasDeEntradaTableAdapter = null;
+            this.tableAdapterManager.NotasDeVendaTableAdapter = this.notasDeVendaTableAdapter;
+            this.tableAdapterManager.ProdutosNotaDeEntradaTableAdapter = null;
+            this.tableAdapterManager.ProdutosNotaDeSaidaTableAdapter = this.produtosNotaDeSaidaTableAdapter;
+            this.tableAdapterManager.ProdutosTableAdapter = this.produtosTableAdapter;
             this.tableAdapterManager.Tp_EnderecoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = DataSetTipadoProject.DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // produtosNotaDeEntradaTableAdapter
+            // clientesTableAdapter
             // 
-            this.produtosNotaDeEntradaTableAdapter.ClearBeforeFill = true;
+            this.clientesTableAdapter.ClearBeforeFill = true;
             // 
-            // notasDeEntradaBindingNavigator
+            // produtosNotaDeSaidaTableAdapter
             // 
-            this.notasDeEntradaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.notasDeEntradaBindingNavigator.BindingSource = this.notasDeEntradaBindingSource;
-            this.notasDeEntradaBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.notasDeEntradaBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.notasDeEntradaBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.notasDeEntradaBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.produtosNotaDeSaidaTableAdapter.ClearBeforeFill = true;
+            // 
+            // produtosTableAdapter
+            // 
+            this.produtosTableAdapter.ClearBeforeFill = true;
+            // 
+            // notasDeVendaBindingNavigator
+            // 
+            this.notasDeVendaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.notasDeVendaBindingNavigator.BindingSource = this.notasDeVendaBindingSource;
+            this.notasDeVendaBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.notasDeVendaBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.notasDeVendaBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.notasDeVendaBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -202,17 +281,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.notasDeEntradaBindingNavigatorSaveItem});
-            this.notasDeEntradaBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.notasDeEntradaBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.notasDeEntradaBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.notasDeEntradaBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.notasDeEntradaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.notasDeEntradaBindingNavigator.Name = "notasDeEntradaBindingNavigator";
-            this.notasDeEntradaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.notasDeEntradaBindingNavigator.Size = new System.Drawing.Size(646, 27);
-            this.notasDeEntradaBindingNavigator.TabIndex = 0;
-            this.notasDeEntradaBindingNavigator.Text = "bindingNavigator1";
+            this.notasDeVendaBindingNavigatorSaveItem});
+            this.notasDeVendaBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.notasDeVendaBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.notasDeVendaBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.notasDeVendaBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.notasDeVendaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.notasDeVendaBindingNavigator.Name = "notasDeVendaBindingNavigator";
+            this.notasDeVendaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.notasDeVendaBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.notasDeVendaBindingNavigator.TabIndex = 1;
+            this.notasDeVendaBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -299,125 +378,35 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // notasDeEntradaBindingNavigatorSaveItem
+            // notasDeVendaBindingNavigatorSaveItem
             // 
-            this.notasDeEntradaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.notasDeEntradaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("notasDeEntradaBindingNavigatorSaveItem.Image")));
-            this.notasDeEntradaBindingNavigatorSaveItem.Name = "notasDeEntradaBindingNavigatorSaveItem";
-            this.notasDeEntradaBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.notasDeEntradaBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.notasDeEntradaBindingNavigatorSaveItem.Click += new System.EventHandler(this.notasDeEntradaBindingNavigatorSaveItem_Click);
+            this.notasDeVendaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.notasDeVendaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("notasDeVendaBindingNavigatorSaveItem.Image")));
+            this.notasDeVendaBindingNavigatorSaveItem.Name = "notasDeVendaBindingNavigatorSaveItem";
+            this.notasDeVendaBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
+            this.notasDeVendaBindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.notasDeVendaBindingNavigatorSaveItem.Click += new System.EventHandler(this.notasDeVendaBindingNavigatorSaveItem_Click);
             // 
-            // txtIdNotaDeEntrada
+            // groupBox2
             // 
-            this.txtIdNotaDeEntrada.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notasDeEntradaBindingSource, "IdNotaDeEntrada", true));
-            this.txtIdNotaDeEntrada.Location = new System.Drawing.Point(170, 54);
-            this.txtIdNotaDeEntrada.Name = "txtIdNotaDeEntrada";
-            this.txtIdNotaDeEntrada.Size = new System.Drawing.Size(113, 23);
-            this.txtIdNotaDeEntrada.TabIndex = 2;
+            this.groupBox2.Controls.Add(this.dgvProdutos);
+            this.groupBox2.Controls.Add(this.bindingNavigator1);
+            this.groupBox2.Location = new System.Drawing.Point(36, 234);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(716, 329);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Detalhes da Nota";
             // 
-            // cbxFornecedor
+            // produtosNotaDeSaidaBindingSource
             // 
-            this.cbxFornecedor.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.notasDeEntradaBindingSource, "IdFornecedor", true));
-            this.cbxFornecedor.DataSource = this.fornecedoresBindingSource;
-            this.cbxFornecedor.DisplayMember = "Nome";
-            this.cbxFornecedor.FormattingEnabled = true;
-            this.cbxFornecedor.Location = new System.Drawing.Point(170, 90);
-            this.cbxFornecedor.Name = "cbxFornecedor";
-            this.cbxFornecedor.Size = new System.Drawing.Size(438, 24);
-            this.cbxFornecedor.TabIndex = 4;
-            this.cbxFornecedor.ValueMember = "IdFornecedor";
-            // 
-            // fornecedoresBindingSource
-            // 
-            this.fornecedoresBindingSource.DataMember = "Fornecedores";
-            this.fornecedoresBindingSource.DataSource = this.dSEstadosECidades;
-            // 
-            // txtNrNota
-            // 
-            this.txtNrNota.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notasDeEntradaBindingSource, "NrNota", true));
-            this.txtNrNota.Location = new System.Drawing.Point(484, 54);
-            this.txtNrNota.Name = "txtNrNota";
-            this.txtNrNota.Size = new System.Drawing.Size(124, 22);
-            this.txtNrNota.TabIndex = 6;
-            // 
-            // dtEmissaoDateTimePicker
-            // 
-            this.dtEmissaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.notasDeEntradaBindingSource, "DtEmissao", true));
-            this.dtEmissaoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtEmissaoDateTimePicker.Location = new System.Drawing.Point(170, 134);
-            this.dtEmissaoDateTimePicker.Name = "dtEmissaoDateTimePicker";
-            this.dtEmissaoDateTimePicker.Size = new System.Drawing.Size(113, 22);
-            this.dtEmissaoDateTimePicker.TabIndex = 8;
-            // 
-            // dtEntradaDateTimePicker
-            // 
-            this.dtEntradaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.notasDeEntradaBindingSource, "DtEntrada", true));
-            this.dtEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtEntradaDateTimePicker.Location = new System.Drawing.Point(484, 134);
-            this.dtEntradaDateTimePicker.Name = "dtEntradaDateTimePicker";
-            this.dtEntradaDateTimePicker.Size = new System.Drawing.Size(120, 22);
-            this.dtEntradaDateTimePicker.TabIndex = 10;
-            // 
-            // fornecedoresTableAdapter
-            // 
-            this.fornecedoresTableAdapter.ClearBeforeFill = true;
-            // 
-            // gpxDetalhesNotaEntrada
-            // 
-            this.gpxDetalhesNotaEntrada.Controls.Add(this.dgvProdutos);
-            this.gpxDetalhesNotaEntrada.Controls.Add(this.bindingNavigator1);
-            this.gpxDetalhesNotaEntrada.Location = new System.Drawing.Point(35, 180);
-            this.gpxDetalhesNotaEntrada.Name = "gpxDetalhesNotaEntrada";
-            this.gpxDetalhesNotaEntrada.Size = new System.Drawing.Size(568, 291);
-            this.gpxDetalhesNotaEntrada.TabIndex = 11;
-            this.gpxDetalhesNotaEntrada.TabStop = false;
-            // 
-            // dgvProdutos
-            // 
-            this.dgvProdutos.AutoGenerateColumns = false;
-            this.dgvProdutos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.dgvProdutos.DataSource = this.produtosNotaDeEntradaBindingSource;
-            this.dgvProdutos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvProdutos.Location = new System.Drawing.Point(3, 45);
-            this.dgvProdutos.Name = "dgvProdutos";
-            this.dgvProdutos.Size = new System.Drawing.Size(562, 243);
-            this.dgvProdutos.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdProduto";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Descrição:";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PrecoCusto";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Custo:";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "QuantidadeCompra";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Quantidade:";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // produtosNotaDeEntradaBindingSource
-            // 
-            this.produtosNotaDeEntradaBindingSource.DataMember = "FK_ProdutosNotaDeEntrada_NotasDeEntrada";
-            this.produtosNotaDeEntradaBindingSource.DataSource = this.notasDeEntradaBindingSource;
+            this.produtosNotaDeSaidaBindingSource.DataMember = "FK_ProdutosNotaDeSaida_NotasDeVenda";
+            this.produtosNotaDeSaidaBindingSource.DataSource = this.notasDeVendaBindingSource;
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem1;
-            this.bindingNavigator1.BindingSource = this.produtosNotaDeEntradaBindingSource;
+            this.bindingNavigator1.BindingSource = this.produtosNotaDeSaidaBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem1;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem1;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -440,7 +429,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem1;
-            this.bindingNavigator1.Size = new System.Drawing.Size(562, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(710, 27);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -529,6 +518,32 @@
             this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
             this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 27);
             // 
+            // produtosNotaDeEntradaBindingSource
+            // 
+            this.produtosNotaDeEntradaBindingSource.DataMember = "ProdutosNotaDeEntrada";
+            this.produtosNotaDeEntradaBindingSource.DataSource = this.dSEstadosECidades;
+            // 
+            // produtosNotaDeEntradaTableAdapter
+            // 
+            this.produtosNotaDeEntradaTableAdapter.ClearBeforeFill = true;
+            // 
+            // dgvProdutos
+            // 
+            this.dgvProdutos.AutoGenerateColumns = false;
+            this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            //this.dataGridViewTextBoxColumn1,
+            //this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.dgvProdutos.DataSource = this.produtosNotaDeEntradaBindingSource;
+            this.dgvProdutos.Location = new System.Drawing.Point(7, 52);
+            this.dgvProdutos.Name = "dgvProdutos";
+            this.dgvProdutos.RowTemplate.Height = 24;
+            this.dgvProdutos.Size = new System.Drawing.Size(703, 220);
+            this.dgvProdutos.TabIndex = 1;
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "IdProdutosNotaDeEntrada";
@@ -544,43 +559,53 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Visible = false;
             // 
-            // produtosTableAdapter
+            // dataGridViewTextBoxColumn3
             // 
-            this.produtosTableAdapter.ClearBeforeFill = true;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdProduto";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Produto:";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // FormNotaDeEntrada
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PrecoCusto";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Preco:";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "QuantidadeCompra";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Quantidade:";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // FormNotaDeSaida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 509);
-            this.Controls.Add(this.gpxDetalhesNotaEntrada);
-            this.Controls.Add(lblIdNotaDeEntrada);
-            this.Controls.Add(this.txtIdNotaDeEntrada);
-            this.Controls.Add(lblIdFornecedor);
-            this.Controls.Add(this.cbxFornecedor);
-            this.Controls.Add(nrNotaLabel);
-            this.Controls.Add(this.txtNrNota);
-            this.Controls.Add(dtEmissaoLabel);
-            this.Controls.Add(this.dtEmissaoDateTimePicker);
-            this.Controls.Add(dtEntradaLabel);
-            this.Controls.Add(this.dtEntradaDateTimePicker);
-            this.Controls.Add(this.notasDeEntradaBindingNavigator);
-            this.Name = "FormNotaDeEntrada";
-            this.Text = "Cadastro de Nota de Entrada - Estoque";
-            this.Load += new System.EventHandler(this.FormNotaDeEntrada_Load);
+            this.ClientSize = new System.Drawing.Size(800, 563);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.notasDeVendaBindingNavigator);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "FormNotaDeSaida";
+            this.Text = "Cadastro de Nota de Venda";
+            this.Load += new System.EventHandler(this.FormNotaDeSaida_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notasDeEntradaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notasDeEntradaBindingNavigator)).EndInit();
-            this.notasDeEntradaBindingNavigator.ResumeLayout(false);
-            this.notasDeEntradaBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).EndInit();
-            this.gpxDetalhesNotaEntrada.ResumeLayout(false);
-            this.gpxDetalhesNotaEntrada.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeEntradaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingNavigator)).EndInit();
+            this.notasDeVendaBindingNavigator.ResumeLayout(false);
+            this.notasDeVendaBindingNavigator.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeSaidaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeEntradaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -588,11 +613,12 @@
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBox1;
         private DataSets.DSEstadosECidades dSEstadosECidades;
-        private System.Windows.Forms.BindingSource notasDeEntradaBindingSource;
-        private DataSets.DSEstadosECidadesTableAdapters.NotasDeEntradaTableAdapter notasDeEntradaTableAdapter;
+        private System.Windows.Forms.BindingSource notasDeVendaBindingSource;
+        private DataSets.DSEstadosECidadesTableAdapters.NotasDeVendaTableAdapter notasDeVendaTableAdapter;
         private DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator notasDeEntradaBindingNavigator;
+        private System.Windows.Forms.BindingNavigator notasDeVendaBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -604,15 +630,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton notasDeEntradaBindingNavigatorSaveItem;
-        private System.Windows.Forms.Label txtIdNotaDeEntrada;
-        private System.Windows.Forms.ComboBox cbxFornecedor;
-        private System.Windows.Forms.TextBox txtNrNota;
-        private System.Windows.Forms.DateTimePicker dtEmissaoDateTimePicker;
-        private System.Windows.Forms.DateTimePicker dtEntradaDateTimePicker;
-        private System.Windows.Forms.BindingSource fornecedoresBindingSource;
-        private DataSets.DSEstadosECidadesTableAdapters.FornecedoresTableAdapter fornecedoresTableAdapter;
-        private System.Windows.Forms.GroupBox gpxDetalhesNotaEntrada;
+        private System.Windows.Forms.ToolStripButton notasDeVendaBindingNavigatorSaveItem;
+        private System.Windows.Forms.Label idNotaDeVendaLabel1;
+        private System.Windows.Forms.ComboBox idClienteComboBox;
+        private System.Windows.Forms.TextBox numeroDaNotaTextBox;
+        private System.Windows.Forms.DateTimePicker dataDaVendaDateTimePicker;
+        private System.Windows.Forms.Label notaFechadaLabel1;
+        private DataSets.DSEstadosECidadesTableAdapters.ClientesTableAdapter clientesTableAdapter;
+        private System.Windows.Forms.BindingSource clientesBindingSource;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
@@ -625,6 +651,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem1;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator5;
+        private System.Windows.Forms.BindingSource produtosNotaDeSaidaBindingSource;
+        private DataSets.DSEstadosECidadesTableAdapters.ProdutosNotaDeSaidaTableAdapter produtosNotaDeSaidaTableAdapter;
+        private DataSets.DSEstadosECidadesTableAdapters.ProdutosTableAdapter produtosTableAdapter;
         private System.Windows.Forms.BindingSource produtosNotaDeEntradaBindingSource;
         private DataSets.DSEstadosECidadesTableAdapters.ProdutosNotaDeEntradaTableAdapter produtosNotaDeEntradaTableAdapter;
         private System.Windows.Forms.DataGridView dgvProdutos;
@@ -633,6 +662,5 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private DataSets.DSEstadosECidadesTableAdapters.ProdutosTableAdapter produtosTableAdapter;
     }
 }
